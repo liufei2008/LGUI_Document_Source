@@ -1,0 +1,59 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "**.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+            "**.png"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "dest": "../LGUI_Document",
+	"globalMetadata": {
+		"_appTitle": "LGUI Documentation",
+		"_appFooter": "Copyright © 2018-2021 LexLiu",
+		"_enableSearch": true,
+		"_enableNewTab": true,
+		"_disableContribution": false
+    },
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+	"template": [
+		"default",
+		"template"
+	],
+    "postProcessors": ["ExtractSearchIndex"],
+    "noLangKeyword": false
+  }
+}
