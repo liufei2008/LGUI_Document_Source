@@ -9,7 +9,7 @@ These pages contain information about how to use LGUI.
 
 <div class="frontpage-section">
 <a href="GetStarted/index.md"><img src="GetStarted/Install/icon.png"></a>
-<h3><a href="GetStarted/index.md">Get started</a></h3>
+<h3><a href="GetStarted/index.md">Get started and tutorial</a></h3>
 <p>Start to use LGUI, component based workflow</p>
 </div>
 
@@ -25,7 +25,7 @@ These pages contain information about how to use LGUI.
 <p>How to use LGUI's element and controls</p>
 </div>
 
-<div class="frontpage-section">
+<!-- <div class="frontpage-section">
 <a href="Layout/index.md"><img src="missing.png"></a>
 <h3><a href="Layout/index.md">Layout</a></h3>
 <p>Use Layout to control location and size of UI</p>
@@ -48,23 +48,36 @@ These pages contain information about how to use LGUI.
 <h3><a href="LGUIDrawableEvent/index.md">LGUIDrawableEvent</a></h3>
 <p>Introduce how to use LGUIDrawableEvent</p>
 </div>
+-->
 
+<!--
 <div class="frontpage-section">
-<a href="InputModule/index.md"><img src="missing.png"></a>
-<h3><a href="InputModule/index.md">InputModule</a></h3>
-<p>Input module</p>
+<a href="InputAndInteraction/index.md"><img src="missing.png"></a>
+<h3><a href="InputAndInteraction/index.md">InputAndInteraction</a></h3>
+<p>Input and Interaction</p>
 </div>
+-->
 
+<!--
 <div class="frontpage-section">
 <a href="LTween/index.md"><img src="missing.png"></a>
 <h3><a href="LTween/index.md">LTween</a></h3>
 <p>LTween for tween animation</p>
 </div>
+-->
 
-<div class="frontpage-section">
-<a href="ReleaseNotes/index.md"><img src="ReleaseNotes/icon.png"></a>
+</div>
+
+
+## Others
+<hr>
+
+<div class="frontpage-others">
 <h3><a href="ReleaseNotes/index.md">ReleaseNotes</a></h3>
 <p>ReleaseNotes contains: updates/ new features/ modify/ bug fix</p>
 </div>
 
-</div>
+<!-- <div class="frontpage-others">
+<h3><a href="ThanksTo/index.md">ThanksTo...</a></h3>
+<p>Thanks to those guys who helped with this plugin</p>
+</div> -->

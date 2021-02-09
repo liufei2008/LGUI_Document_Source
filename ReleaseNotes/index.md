@@ -1,93 +1,95 @@
 ## 2.11.3
 #### Fix:
-Fix update layout issue when IsUIActive=false.
-Fix memory leak caused by LGUIEditorManagerObject referencing UIItem.
+Fix update layout issue when IsUIActive=false.  
+Fix memory leak caused by LGUIEditorManagerObject referencing UIItem.  
+Fix a crash: Crash when use navigation input but there is no UISelectable.  
 #### Modify:
-Add right and middle mouse button trigger event to PresetEventSystemActor.
-Menu "Create UI Extension Elements" remove post process actors.
-Add lambda function for RegisterEvent of interaction components.
+Add right and middle mouse button trigger event to PresetEventSystemActor.  
+Menu "Create UI Extension Elements" remove post process actors.  
+Add lambda function for RegisterEvent of interaction components.  
+Add more blueprint function for LGUIXXXInteraction.  
 ## 2.11.2
 #### NewFeature:
-Add controller input support.
-Custom mouse position input.
+Add controller input support.  
+Custom mouse position input.  
 #### Fix:
-Fix useNativeParameter issue when copy event in LGUIDrawableEvent.
+Fix useNativeParameter issue when copy event in LGUIDrawableEvent.  
 ## 2.11.1
 #### Fix:
-Fix a shader compiler error X3504 caused by LGUIHudShader.usf.
-Fix buildin prefab not loaded in packaged game.
-Fix UITexture's UVRect issue.
+Fix a shader compiler error X3504 caused by LGUIHudShader.usf.  
+Fix buildin prefab not loaded in packaged game.  
+Fix UITexture's UVRect issue.  
 #### NewFeature:
-**Support MultiSampleAntiAliasing!!!(MSAA)** Turn on MSAA in ProjectSettins/LGUI/Renderging/AntiAliasing.
-UIBackgroundBlur and UIBackgroundPixelate now support on mobile.
+**Support MultiSampleAntiAliasing!!!(MSAA)** Turn on MSAA in ProjectSettins/LGUI/Renderging/AntiAliasing.  
+UIBackgroundBlur and UIBackgroundPixelate now support on mobile.  
 ## 2.11.0
 #### NewFeature:
-Layout support animation when change item position.
-Add more blueprint functions in UIItem: GetRenderCanvas GetRootCanvas GetCanvasScaler IsScreenSpaceOverlayUI IsRenderTargetUI IsWorldSpaceUI.
-OnPointerEnter/Exit event more reasonable: parent enter/exit will execute only once if pointer enter/exit any child.
-LGUIEventFireType add new enum: OnlyTargetActor.
-Play/Stop mark as UFUNCTION in LGUIPlayTween.
+Layout support animation when change item position.  
+Add more blueprint functions in UIItem: GetRenderCanvas GetRootCanvas GetCanvasScaler IsScreenSpaceOverlayUI IsRenderTargetUI IsWorldSpaceUI.  
+OnPointerEnter/Exit event more reasonable: parent enter/exit will execute only once if pointer enter/exit any child.  
+LGUIEventFireType add new enum: OnlyTargetActor.  
+Play/Stop mark as UFUNCTION in LGUIPlayTween.  
 #### Modify:
-Remove OnPointerDragEnter/Exit interface because it is not needed, we can instead use isDragging and enterComponent from LGUIPointerEventData.
-Rename DeleteActor to DestroyActorWithHierarchy.
-Simplify LGUIPointerInputModule's event handle.
+Remove OnPointerDragEnter/Exit interface because it is not needed, we can instead use isDragging and enterComponent from LGUIPointerEventData.  
+Rename DeleteActor to DestroyActorWithHierarchy.  
+Simplify LGUIPointerInputModule's event handle.  
 #### Fix:
-Select canvas on SceneOutliner may change selection.
-UIItem depth info wrong.
-RichText may display "<" if end with symbol.
-Fix sort issue when use LGUI hierarchy sort.
-Fix bug: delay not working in some LTweenBPLibrary.
-Fix bug: If sprite have none packingTag, then uv get wrong.
-Fix bug: if LTween's duration = 0, then nothing happen.
+Select canvas on SceneOutliner may change selection.  
+UIItem depth info wrong.  
+RichText may display "<" if end with symbol.  
+Fix sort issue when use LGUI hierarchy sort.  
+Fix bug: delay not working in some LTweenBPLibrary.  
+Fix bug: If sprite have none packingTag, then uv get wrong.  
+Fix bug: if LTween's duration = 0, then nothing happen.  
 ## 2.10.1
 #### Fix:
-Fix bug: UIEventTrigger parameter become (Actor) type.
+Fix bug: UIEventTrigger parameter become (Actor) type.  
 ## 2.10.0
 #### Modify:
-Rename UISector to UIPolygon, remake it so it is much handy now. (You may need UE's "redirect" if you use UISector before, but some properties may need to mannually setup).
-Remake UIRing, based on UI2DLineRenderer. Now UIRing and UI2DLine is more powerfull. (You may need UE's "redirect" if you use UIMesh before).
-Rename UIMesh to UIStaticMesh. (You may need UE's "redirect" if you use UIMesh before).
-LGUIPrefab will not crash editor, but give an error message if something wrong happen.
+Rename UISector to UIPolygon, remake it so it is much handy now. (You may need UE's "redirect" if you use UISector before, but some properties may need to mannually setup).  
+Remake UIRing, based on UI2DLineRenderer. Now UIRing and UI2DLine is more powerfull. (You may need UE's "redirect" if you use UIMesh before).  
+Rename UIMesh to UIStaticMesh. (You may need UE's "redirect" if you use UIMesh before).  
+LGUIPrefab will not crash editor, but give an error message if something wrong happen.  
 #### NewFeature:
-Add UIPolygonLine(a line/frame version of UIPolygon).
-Material now support WorldPositionOffset.
+Add UIPolygonLine(a line/frame version of UIPolygon).  
+Material now support WorldPositionOffset.  
 #### Fix:
-Click to select UI elements, now is much stable.
-Fix drawcall collection info display error.
-Lot of bugs fixed.
+Click to select UI elements, now is much stable.  
+Fix drawcall collection info display error.  
+Lot of bugs fixed.  
 ## 2.9.10
 #### Fix:
-UIBackgroundPixelate flipped.
+UIBackgroundPixelate flipped.  
 #### Modify:
-UIBackgroundBlur and UIBackgroundPixelate now become stable, but not support mobile.
-Simplify post process shader.
+UIBackgroundBlur and UIBackgroundPixelate now become stable, but not support mobile.  
+Simplify post process shader.  
 ## 2.9.9
 #### Fix:
-Fix a crash caused by LGUI's scene outliner extension.
-Fix a crash when package android platform.
+Fix a crash caused by LGUI's scene outliner extension.  
+Fix a crash when package android platform.  
 #### NewFeature:
-New type of UI element: UIMesh, allow to use a UStaticMesh to render in screen space UI.
+New type of UI element: UIMesh, allow to use a UStaticMesh to render in screen space UI.  
 #### Modify:
-Simplify post process shader.
+Simplify post process shader.  
 ## 2.9.8
 #### Fix:
-Fix a crash when click RecreateThis in prefab.
-Fix a issue in UIScrollViewWithScrollbar, add more hints.
+Fix a crash when click RecreateThis in prefab.  
+Fix a issue in UIScrollViewWithScrollbar, add more hints.  
 ## 2.9.7
 #### Fix:
-Fix a crash when destroy UIBackgroundBlur and UIBackgroundPixelate.
-Fix bug: UITexture not update when click snap size.
+Fix a crash when destroy UIBackgroundBlur and UIBackgroundPixelate.  
+Fix bug: UITexture not update when click snap size.  
 #### Change:
-When select a actor and copy/paste use LGUI's method, the new actors will use selected actor as parent.
---Thanks to "四青", he helped testing this plugin.
+When select a actor and copy/paste use LGUI's method, the new actors will use selected actor as parent.  
+--Thanks to "四青", he helped testing this plugin.  
 #### NewFeature:
-Support material masked blend mode for screen space UI's custom material.
+Support material masked blend mode for screen space UI's custom material.  
 ## 2.9.6
 #### Fix:
-Fix ScrollViewWithScrollbar issue.
-Fix Start call issue in LGUIBehaviour.
+Fix ScrollViewWithScrollbar issue.  
+Fix Start call issue in LGUIBehaviour.  
 #### NewFeature:
-Add a blueprint function for runtime create LGUISpriteData.
+Add a blueprint function for runtime create LGUISpriteData.  
 ## 2.9.5  
 #### Fix:  
 Fix a crash caused by Raycaster.  
