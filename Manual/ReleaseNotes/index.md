@@ -46,7 +46,7 @@ Fix bug: if LTween's duration = 0, then nothing happen.
 Fix bug: UIEventTrigger parameter become (Actor) type.  
 ## 2.10.0
 #### Modify:
-Rename UISector to UIPolygon, remake it so it is much handy now. (You may need UE's "redirect" if you use UISector before, but some properties may need to mannually setup).  
+Rename UISector to UIPolygon, remake it so it is much handy now. (You may need UE's "redirect" if you use UISector before, but some properties may need to manually setup).  
 Remake UIRing, based on UI2DLineRenderer. Now UIRing and UI2DLine is more powerfull. (You may need UE's "redirect" if you use UIMesh before).  
 Rename UIMesh to UIStaticMesh. (You may need UE's "redirect" if you use UIMesh before).  
 LGUIPrefab will not crash editor, but give an error message if something wrong happen.  

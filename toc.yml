@@ -1,7 +1,5 @@
 - name: Documentation
   href: index.md
 - name: Manual
-  href: index.md
-  homepage: index.md
-- name: API
-  href: api/
+  href: Manual/
+  homepage: Manual/index.md
