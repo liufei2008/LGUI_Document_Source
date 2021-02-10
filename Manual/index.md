@@ -58,13 +58,11 @@ These pages contain information about how to use LGUI.
 </div>
 -->
 
-<!--
 <div class="frontpage-section">
-<a href="LTween/index.md"><img src="missing.png"></a>
+<a href="LTween/index.md"><img src="LTween/GetStarted/icon.png"></a>
 <h3><a href="LTween/index.md">LTween</a></h3>
 <p>LTween for tween animation</p>
 </div>
--->
 
 </div>
 
