@@ -19,17 +19,31 @@ These pages contain information about how to use LGUI.
 <p>Introduce sample projects, and download these projects from github</p>
 </div>
 
-<div class="frontpage-section">
+<!-- <div class="frontpage-section">
 <a href="UIElementsAndControls/index.md"><img src="UIElementsAndControls/icon.png"></a>
 <h3><a href="UIElementsAndControls/index.md">UI elements and controls</a></h3>
 <p>How to use LGUI's element and controls</p>
+</div> -->
+
+<div class="frontpage-section">
+<a href="Rendering/index.md"><img src="Rendering/icon.png"></a>
+<h3><a href="Rendering/index.md">Rendering</a></h3>
+<p>LGUI's rendering framework</p>
 </div>
 
-<!-- <div class="frontpage-section">
-<a href="Layout/index.md"><img src="missing.png"></a>
+<div class="frontpage-section">
+<a href="Layout/index.md"><img src="../missing.png"></a>
 <h3><a href="Layout/index.md">Layout</a></h3>
 <p>Use Layout to control location and size of UI</p>
 </div>
+
+<div class="frontpage-section">
+<a href="Interaction/index.md"><img src="../missing.png"></a>
+<h3><a href="InputAndInteraction/index.md">InputAndInteraction</a></h3>
+<p>Input and Interaction</p>
+</div>
+
+<!-- 
 
 <div class="frontpage-section">
 <a href="LGUIPrefab/index.md"><img src="missing.png"></a>
@@ -47,14 +61,6 @@ These pages contain information about how to use LGUI.
 <a href="LGUIDrawableEvent/index.md"><img src="missing.png"></a>
 <h3><a href="LGUIDrawableEvent/index.md">LGUIDrawableEvent</a></h3>
 <p>Introduce how to use LGUIDrawableEvent</p>
-</div>
--->
-
-<!--
-<div class="frontpage-section">
-<a href="InputAndInteraction/index.md"><img src="missing.png"></a>
-<h3><a href="InputAndInteraction/index.md">InputAndInteraction</a></h3>
-<p>Input and Interaction</p>
 </div>
 -->
 

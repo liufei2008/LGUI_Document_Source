@@ -8,7 +8,28 @@
 
 # [SampleProjects](SampleProjects/index.md)
 
-# [UIElementsAndControls](UIElementsAndControls/index.md)
-## [Button](UIElementsAndControls/Button/index.md)
+# [Rendering](Rendering/index.md)
+## LGUICanvas
+### [LGUICanvas](Rendering/LGUICanvas/index.md)
+### [ScreenSpaceUI](Rendering/ScreenSpaceUI/index.md)
+### [WorldSpaceUI](Rendering/WorldSpaceUI/index.md)
+## UIRenderable
+### [UISprite](Rendering/UISprite/index.md)
+### [UITexture](Rendering/UITexture/index.md)
+### [UIText](Rendering/UIText/index.md)
+### [UIExtensionElements](Rendering/UIExtensionElements/index.md)
+## UIPostProcess
+### [UIBackgroundBlur](Rendering/UIBackgroundBlur/index.md)
+### [UIBackgroundPixelate](Rendering/UIBackgroundPixelate/index.md)
+
+<!-- # [Layout](Layout/index.md) -->
+
+<!-- # [Interaction](Interaction/index.md) -->
+
+# [TweenAnimation](LTween/index.md)
+## [GetStarted](LTween/GetStarted/index.md)
+## [LTween for LGUI](LTween/LGUI/index.md)
+## [Custom tween target](LTween/Custom/index.md)
+## [LTween functions](LTween/Functions/index.md)
 
 # [ReleaseNotes](ReleaseNotes/index.md)
