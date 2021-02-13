@@ -1,3 +1,13 @@
+## 2.11.4
+#### NewFeature:
+Add new Incremental loop type for LTween.  
+Add loop count limit for LTween.  
+Add OnCycleComplete callback function for LTween, called when every loop cycle complete.  
+#### Fix:
+Fix a potential crash when sort priority in canvas.  
+#### Modify:
+Modify some editor appearance.  
+Shared depth count info now split to Renderable and RaycastTarget.  
 ## 2.11.3
 #### Fix:
 Fix update layout issue when IsUIActive=false.  
