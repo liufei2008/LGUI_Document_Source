@@ -1,4 +1,4 @@
-## UIButton
+## Button from scratch
 This video will show us how to create our own button from scratch.
 
 <hr>

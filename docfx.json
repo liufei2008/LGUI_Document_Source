@@ -21,7 +21,8 @@
     "resource": [
       {
         "files": [
-            "**.png"
+            "**.png",
+            "**.gif"
         ],
         "exclude": [
           "obj/**",

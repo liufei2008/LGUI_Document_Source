@@ -1,3 +1,24 @@
+## 2.11.6
+#### Fix:
+Fix a crash caused by RangeSelector and RichTextTagSelector when check flipDirection.
+Fix custom tag unfunctional when the tag mark followed by empty character.
+Fix bug: text pixelperfect mode affect character width, result in different layout.
+#### Modify:
+Replace CreateLambda with CreateWeakLambda, because CreateWeakLambda is more reliable for UObject.
+Improve paragraph alignment editor for UIText.
+RichText color name use html/markdown standard color, before is ue4's color, tiny different.
+Add more color name in RichText, check [document](../Rendering/RichTextReference/index.md).
+## 2.11.5
+#### NewFeature:
+RichText support custom tag.  
+TextAnimation selector get a new selector: RichTextTag, for easily select char by custom tag.  
+#### Fix:
+LTween: Fix OnComplete callback for Incremental looptype.  
+TextAnimation more stable.  
+#### Modify:
+MSAA disabled by default(not compatible with UIBackgroundXXX in DX12).  
+Cleanup LTween Register/UnregisterUpdateEvent.  
+Adjust detail panels display.  
 ## 2.11.4
 #### NewFeature:
 Add new Incremental loop type for LTween.  

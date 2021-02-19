@@ -3,6 +3,12 @@
 /* Docs pages
    ------------------------------------------------------- */
 
+div.richtext-color-block{
+  width:40px; 
+  height:20px; 
+  box-shadow: 1px 1px 3px #00000080
+}
+
 div.frontpage {
 }
 div.frontpage:after {

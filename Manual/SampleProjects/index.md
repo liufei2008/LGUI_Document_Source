@@ -20,6 +20,7 @@ Features:
 * Layout
 * Prefab
 * Controller input
+* TextAnimation
 
 <hr>
 #### Si-fi UI

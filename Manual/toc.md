@@ -5,6 +5,7 @@
 ## [Font](GetStarted/Font/index.md)
 ## [Prefab](GetStarted/Prefab/index.md)
 ## [Interaction](GetStarted/Interaction/index.md)
+## [CreateButtonFromStratch](GetStarted/CreateButton/index.md)
 
 # [SampleProjects](SampleProjects/index.md)
 
@@ -13,11 +14,17 @@
 ### [LGUICanvas](Rendering/LGUICanvas/index.md)
 ### [ScreenSpaceUI](Rendering/ScreenSpaceUI/index.md)
 ### [WorldSpaceUI](Rendering/WorldSpaceUI/index.md)
+## LGUITransform
+### [UIItem and UIContainer](Rendering/UIItem/index.md)
 ## UIRenderable
 ### [UISprite](Rendering/UISprite/index.md)
 ### [UITexture](Rendering/UITexture/index.md)
 ### [UIText](Rendering/UIText/index.md)
 ### [UIExtensionElements](Rendering/UIExtensionElements/index.md)
+### [RichTextReference](Rendering/RichTextReference/index.md)
+## UIEffect
+### [CommonEffect](Rendering/CommonEffect/index.md)
+### [TextAnimation](Rendering/TextAnimation/index.md)
 ## UIPostProcess
 ### [UIBackgroundBlur](Rendering/UIBackgroundBlur/index.md)
 ### [UIBackgroundPixelate](Rendering/UIBackgroundPixelate/index.md)

@@ -29,6 +29,20 @@
 
 
 
+## LGUI Transform
+<hr>
+<div class="frontpage">
+
+<div class="frontpage-section">
+<a href="UIItem/index.md"><img src="UIItem/2.png"></a>
+<h3><a href="UIItem/index.md">UIItem and UIContainer</a></h3>
+<p>UIItem inherit from SceneComponent, and act as a rectangle area. UIContainer is just a actor wrapper for UIItem.</p>
+</div>
+
+</div>
+
+
+
 ## UIRenderable
 <hr>
 <div class="frontpage">
@@ -46,7 +60,7 @@
 </div>
 
 <div class="frontpage-section">
-<a href="UIText/index.md"><img src="../../missing.png"></a>
+<a href="UIText/index.md"><img src="UIText/icon.png"></a>
 <h3><a href="UIText/index.md">UIText</a></h3>
 <p>UIText can render text with font</p>
 </div>
@@ -57,7 +71,33 @@
 <p>Other renderable UI elements</p>
 </div>
 
+<div class="frontpage-section">
+<a href="RichTextReference/index.md"><img src="RichTextReference/icon.png"></a>
+<h3><a href="RichTextReference/index.md">RichTextReference</a></h3>
+<p>Use RichText to make our text look better</p>
 </div>
+
+</div>
+
+
+## UIEffect
+<hr>
+<div class="frontpage">
+
+<div class="frontpage-section">
+<a href="CommonEffect/index.md"><img src="CommonEffect/icon.png"></a>
+<h3><a href="CommonEffect/index.md">CommonEffect</a></h3>
+<p>Shadow, LongShadow, Outline, PositionAsUV, GradientColor</p>
+</div>
+
+<div class="frontpage-section">
+<a href="TextAnimation/index.md"><img src="TextAnimation/TextAnimation.gif"></a>
+<h3><a href="TextAnimation/index.md">TextAnimation</a></h3>
+<p>TextAnimation can make per character animation</p>
+</div>
+
+</div>
+
 
 
 
