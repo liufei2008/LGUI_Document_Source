@@ -1,3 +1,21 @@
+## 2.11.7
+#### Fix:
+Fix bug: Click LGUI scene outliner menu cause deselect actor.  
+Fix bug: Drag root UIItem result in wrong AnchorOffset value.  
+Fix LTween ease animation error: InOutElastic, InOutBack, InBounce, InOutBounce.  
+#### Modify:
+Remove LGUIEditHelper.  
+Add more blueprint function for LGUIPlayTween.  
+Editor detail appearance change: display thumbnail = false.  
+Rename text animation related objects. Previours names are easily missunderstanding.  
+These class move to namespace "LGUIPrefabSystem": ActorSerializer, ActorCopier, ActorReplaceTool.  
+Make LTween blueprint functions easier: FloatTo, IntTo, VectorTo, ColorTo...  
+Cleanup editor code. Check [this doc](../LTween/Custom/index.md).  
+#### NewFeature:
+Auto refresh UI when: reimport sprite texture; change border value.  
+Support "Num Customized UVs" in hud material.  
+Add image sequence player for easily play image sequence, 2 new component: UISpriteSequencePlayer, UISpriteSheetTexturePlayer.  
+Add copy/paste on custom editor. Now we can copy/paste anchor of LGUITransform.  
 ## 2.11.6
 #### Fix:
 Fix a crash caused by RangeSelector and RichTextTagSelector when check flipDirection.

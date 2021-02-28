@@ -15,31 +15,21 @@ Attach "TweenAnimation" component to cube:
 
 Drag out from "Event Begin Play" and add "Rotator To" node:
 ![](step4.png)
-See the parameter "Getter" and "Setter" of "Rotator To" node.
 
-#### 2. Setup node with Getter
-**"Getter" and "Setter" is LTween's delegate, LTween will use "Getter" to get start value, then calculate result value from start value and "End Value", and use "Setter" to pass the result value.**
+#### 2. Setup "Setter" parameters
+**"Setter" is LTween's delegate, LTween will calculate interpolated value from "Start Value" and "End Value", and use "Setter" to pass the interpolated value.**
 
-Drag out "Getter" and select "EventDispatchers"->"CreateEvent" (since unreal's event cannot have return value, we need to use a function instead):
+Drag out "Setter" and choose "Add Event"->"Add Custom Event", then a event with value of rotator type will be created:
 ![](step5.png)
 
-In "CreateEvent" node, choose "Create a matching function":
+Setup the "CustomEvent_0" like this:
 ![](step6.png)
 
-That will automatically create a function with return value. Change the function like this:
+#### 3. Setup other parameter
+Drag out "Root Component" and select "Get Relative Rotation", and connect to start value:
 ![](step7.png)
 
-Back to "Rotator To" node, drag out "Setter" and choose "Add Event"->"Add Custom Event", then a event with value of rotator type will be created:
+Set "End Value" to (0, 0, 90), "Duration" to 3.0, set delay to 1.0:
 ![](step8.png)
-
-Setup the "CustomEvent_0" like this:
-![](step9.png)
-
-#### 3. Setup node parameter
-Drag out "End Value" from "Rotator To" and choose "Make Rotator", change "Z(Yaw)" to 90:
-![](step10.png)
-
-Set "Duration" to 3.0, set delay to 1.0:
-![](step11.png)
 
 Now the setup is complete, hit play to see the animation.
