@@ -106,13 +106,13 @@
 <div class="frontpage">
 
 <div class="frontpage-section">
-<a href="UIBackgroundBlur/index.md"><img src="../../missing.png"></a>
+<a href="UIBackgroundBlur/index.md"><img src="UIBackgroundBlur/icon.png"></a>
 <h3><a href="UIBackgroundBlur/index.md">UIBackgroundBlur</a></h3>
 <p>Blur the background image</p>
 </div>
 
 <div class="frontpage-section">
-<a href="UIBackgroundPixelate/index.md"><img src="../../missing.png"></a>
+<a href="UIBackgroundPixelate/index.md"><img src="UIBackgroundPixelate/icon.png"></a>
 <h3><a href="UIBackgroundPixelate/index.md">UIBackgroundPixelate</a></h3>
 <p>Pixelate the background image</p>
 </div>

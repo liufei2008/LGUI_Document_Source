@@ -1,3 +1,16 @@
+## 2.12.0
+#### NewFeature:
+Editor: Cross level copy/paste actor with hierarchy.  
+Editor: Revert prefab will not modify root ui item's anchor.  
+Editor: If create UIItem in sublevel, then automatic make the sub level as current level.  
+Split UIRenderable to UIBaseRenderable, UIRenderable, UIPostProcess.  
+UIRenderable can do self render, means it can create-drawcall/ render/ sort by it self.  
+Split out RenderProxy from PostProcess, render thread more stable.  
+ScreenSpaceUI material now support wireframe.  
+#### Modify:
+Remove LGUIBehaviourExecuteOrder.  
+#### Fix:
+Reconstruct LGUIBehaviour lifecycle functions.  
 ## 2.11.7
 #### Fix:
 Fix bug: Click LGUI scene outliner menu cause deselect actor.  

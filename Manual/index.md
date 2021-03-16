@@ -85,3 +85,34 @@ These pages contain information about how to use LGUI.
 <h3><a href="ThanksTo/index.md">ThanksTo...</a></h3>
 <p>Thanks to those guys who helped with this plugin</p>
 </div> -->
+
+
+## New docs
+<hr>
+<div class="frontpage">
+
+<div class="frontpage-section">
+<a href="Rendering/CommonEffect/index.md"><img src="Rendering/CommonEffect/icon.png"></a>
+<h3><a href="Rendering/CommonEffect/index.md">CommonEffect</a></h3>
+<p>Shadow, LongShadow, Outline, PositionAsUV, GradientColor</p>
+</div>
+
+<div class="frontpage-section">
+<a href="Rendering/TextAnimation/index.md"><img src="Rendering/TextAnimation/TextAnimation.gif"></a>
+<h3><a href="Rendering/TextAnimation/index.md">TextAnimation</a></h3>
+<p>TextAnimation can make per character animation</p>
+</div>
+
+<div class="frontpage-section">
+<a href="Rendering/UIBackgroundBlur/index.md"><img src="Rendering/UIBackgroundBlur/icon.png"></a>
+<h3><a href="Rendering/UIBackgroundBlur/index.md">UIBackgroundBlur</a></h3>
+<p>Blur the background image</p>
+</div>
+
+<div class="frontpage-section">
+<a href="Rendering/UIBackgroundPixelate/index.md"><img src="Rendering/UIBackgroundPixelate/icon.png"></a>
+<h3><a href="Rendering/UIBackgroundPixelate/index.md">UIBackgroundPixelate</a></h3>
+<p>Pixlate the background image</p>
+</div>
+
+</div>
