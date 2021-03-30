@@ -1,3 +1,28 @@
+## 2.12.2
+#### NewFeature:
+Add tween function MeshMaterialScalarPrameterTo/ MeshMaterialVectorParameterTo, directly set tween animation for MeshComponent's material.  
+If *selfRender* set to true for UIRenderable elements, then set depth can change Translucent Sort Priority.  
+Add editor button:Set depth forward or backward with children.  
+UITexture now support *Filled* type, just like UISprite.  
+Expose blueprint function for LTween: DisableTick, EnableTick, CustomTick, so we can control our tween's tick behaviour in blueprint.  
+Add Layout menu in *LGUI Tools*.  
+#### Fix:
+SetUIActive(false) in Awake, but OnEnable still be called.  
+Awake called in editor.  
+Editor: Lock scale ratio can work with UI elements.  
+ScrollView won't work if deactive at start, and later active again.  
+#### Modify:
+Editor: Confirm before delete actor.  
+Hide UIItemEditorHelperComp, and make it editor only.
+## 2.12.1
+#### NewFeature:
+Add tween function: AnchorOffsetTo.  
+#### Fix:
+Fix screen space UI flicking issue.  
+Fix post process update issue.  
+#### Modify:
+SetDepth can propagate to children.  
+Preserver hierarchy state data stored in a hidden actor.  
 ## 2.12.0
 #### NewFeature:
 Editor: Cross level copy/paste actor with hierarchy.  

@@ -40,3 +40,8 @@
 ## [LTween functions](LTween/Functions/index.md)
 
 # [ReleaseNotes](ReleaseNotes/index.md)
+
+# [HowTos](HowTos/index.md)
+## [Project world position to LGUI's screen position](HowTos/ProjectWorldToScreen/index.md)
+## [Deproject LGUI's screen position to world](HowTos/DeprojectScreenToWorld/index.md)
+## [Use Custom Material](HowTos/CustomMaterial/index.md)

@@ -81,6 +81,11 @@ These pages contain information about how to use LGUI.
 <p>ReleaseNotes contains: updates/ new features/ modify/ bug fix</p>
 </div>
 
+<div class="frontpage-others">
+<h3><a href="HowTos/index.md">UI How Tos</a></h3>
+<p>UI How Tos</p>
+</div>
+
 <!-- <div class="frontpage-others">
 <h3><a href="ThanksTo/index.md">ThanksTo...</a></h3>
 <p>Thanks to those guys who helped with this plugin</p>
@@ -90,6 +95,18 @@ These pages contain information about how to use LGUI.
 ## New docs
 <hr>
 <div class="frontpage">
+
+<div class="frontpage-section">
+<a href="HowTos/ProjectWorldToScreen/index.md"><img src="HowTos/ProjectWorldToScreen/3.png"></a>
+<h3><a href="HowTos/ProjectWorldToScreen/index.md">Project world position to LGUI's screen position</a></h3>
+<p>Project world position to LGUI's screen position</p>
+</div>
+
+<div class="frontpage-section">
+<a href="HowTos/DeprojectScreenToWorld/index.md"><img src="HowTos/DeprojectScreenToWorld/3.png"></a>
+<h3><a href="HowTos/DeprojectScreenToWorld/index.md">Deproject LGUI's screen position to world</a></h3>
+<p>Deproject LGUI's screen position to world</p>
+</div>
 
 <div class="frontpage-section">
 <a href="Rendering/CommonEffect/index.md"><img src="Rendering/CommonEffect/icon.png"></a>
