@@ -8,6 +8,8 @@
 
 <h3><a href="DisableInteractionComponent/index.md">Disable interaction component</a></h3>
 
+<h3><a href="FindChildByDisplayName/index.md">Find Child by DisplayName</a></h3>
+
 <!-- <h3><a href="AdaptDifferentResolution/index.md">Adapt to different screen resolution</a></h3>
 
 <h3><a href="FitSizeToContent/index.md">Making UI elements fit the size of their content</a></h3>

@@ -97,6 +97,24 @@ These pages contain information about how to use LGUI.
 <div class="frontpage">
 
 <div class="frontpage-section">
+<a href="HowTos/FindChildByDisplayName/index.md"><img src="HowTos/FindChildByDisplayName/1.png"></a>
+<h3><a href="HowTos/FindChildByDisplayName/index.md">Find Child by DisplayName</a></h3>
+<p>Find Child by DisplayName</p>
+</div>
+
+<div class="frontpage-section">
+<a href="HowTos/CustomMaterial/index.md"><img src="HowTos/CustomMaterial/1.1.png"></a>
+<h3><a href="HowTos/CustomMaterial/index.md">Use Custom Material</a></h3>
+<p>Use Custom Material</p>
+</div>
+
+<div class="frontpage-section">
+<a href="InteractionAndControls/UIInteractionGroup/index.md"><img src="InteractionAndControls/UIInteractionGroup/4.png"></a>
+<h3><a href="InteractionAndControls/UIInteractionGroup/index.md">Disable interaction component</a></h3>
+<p>Disable interaction component</p>
+</div>
+
+<div class="frontpage-section">
 <a href="HowTos/ProjectWorldToScreen/index.md"><img src="HowTos/ProjectWorldToScreen/3.png"></a>
 <h3><a href="HowTos/ProjectWorldToScreen/index.md">Project world position to LGUI's screen position</a></h3>
 <p>Project world position to LGUI's screen position</p>
