@@ -1,3 +1,23 @@
+## 2.12.3
+#### NewFeature:
+Add **DisplayName** property for UIItem, so we can use **FindChildByDisplayName** to find a child of provided name, and **FindChildArrayByDisplayName** to find child collection of same name.  
+UIBackgroundBlur and UIBackgroundPixelate now support rect-clip and texture-clip.  
+Add *CanScollInSmallSize* property in UIScollView, controls: when content size is smaller than it's parent size, can scoll it or not.  
+Add callback event to UIToggleGroup.  
+Add *UnlinkPrefab* function for *LGUI Tools*.  
+Add **Dropdown** control, deprecate **FlyoutMenu** and **ComboBox**.  
+#### Modify:
+Split out clip function from material.  
+Texture clip use red channel as clip input.  
+Editor: Confirm before delete prefab instance.  
+#### Fix:
+UIBackgroundBlur not work in condition: upper actor have LGUICanvas (not root canvas), if turn the canvas off and on, then UIBackgroundBlur will not work.  
+Directly set UIItem's position.z not work.  
+Copy actor mark the actors not valid.  
+Missing component when create from LGUI's prefab system. Turns out I put the component in wrong place.  
+Text render with a tiny black edge when in small size.  
+Nested canvas with rect clip, but sub canvas's clip value not update when position change.  
+
 ## 2.12.2
 #### NewFeature:
 Add tween function MeshMaterialScalarPrameterTo/ MeshMaterialVectorParameterTo, directly set tween animation for MeshComponent's material.  

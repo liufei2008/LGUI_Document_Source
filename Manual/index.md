@@ -38,9 +38,9 @@ These pages contain information about how to use LGUI.
 </div>
 
 <div class="frontpage-section">
-<a href="Interaction/index.md"><img src="../missing.png"></a>
-<h3><a href="InputAndInteraction/index.md">InputAndInteraction</a></h3>
-<p>Input and Interaction</p>
+<a href="InteractionAndControls/index.md"><img src="InteractionAndControls/icon.png"></a>
+<h3><a href="InteractionAndControls/index.md">Interaction and Controls</a></h3>
+<p>Interaction and Controls</p>
 </div>
 
 <!-- 

@@ -1,4 +1,5 @@
 ## UIItem
+UIContainer is a actor wrapper of UIItem.
 
 #### 1. Transform related properties
 ![](1.png)
