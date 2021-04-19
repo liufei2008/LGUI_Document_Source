@@ -1,3 +1,23 @@
+## 2.12.4
+#### NewFeature:
+Add *IncludeChildren* parameter in FindChildByDisplayName and FindChildArrayByDisplayName function.  
+Add *Use8Direction* property in UIEffectOutline.  
+Add *OwnerNoSee* and *OnlyOwnerSee* property in LGUICanvas.  
+Optimize anchor calculation in UIItem. Remove SetUIRelativeLocation(and similar SetUIXXX) function, instead use native SetRelativeLocation.  
+#### Modify:
+Access dropdown in blueprint.  
+Remove *ClearEvent* when switch left/right mouse button input.  
+UIToggleGroupComponent callback use index instead of UIToggleComponent.  
+Add version number for LGUIPrefab.  
+Add more check when create atlas.  
+Lock move if UIItem's anchor is locked by layout in editor.  
+#### Fix:
+Crash if change *enable* property in LGUIBehaviour.  
+Shader error when package in android.  
+Crash caused by UIScrollViewWithScrollbarComponent, when change Horizontal or Vertical after delete scrollbar.  
+StaticMesh render issue when spawn from prefab.  
+LGUIPrefab set initial transform fail.  
+Crash caused by LGUIDrawableEvent, if assign different type of actor.  
 ## 2.12.3
 #### NewFeature:
 Add **DisplayName** property for UIItem, so we can use **FindChildByDisplayName** to find a child of provided name, and **FindChildArrayByDisplayName** to find child collection of same name.  
