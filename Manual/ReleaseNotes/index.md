@@ -1,3 +1,19 @@
+## 2.12.6
+#### Modify:
+**PrefabSystem Update!** Now prefab can cook automatically. We don't need to *Recreate* the prefab if property field changed or version change, or any other reason.  
+Adjust LGUIComponentReference's *Get* node in blueprint.  
+#### Fix:
+Correct calculate the Clip-Rect-Offset property in LGUICanvas.  
+UIDropdown's automatic pisition will take consider canvas's rect clip property.  
+Enter/Exit event bubble not execute as expected when there is an empty UI-element(no enter/exit interface component) between the hierarchy.  
+## 2.12.5
+#### NewFeature:
+Level editor camera focus and align to Screen-Space-UI by *LGUI Tools* or keyboard shotcut.  
+#### Modify:
+Remake anchor calculation, now we can use SetRelativeLocation/Rotation instead of SetUIRelativeLocation/Rotation, and anchor will be calculated automatically.  
+#### Fix:
+Crash caused by layout calculation(new calculation method in version 2.12.4).  
+Fix compile error in source-build-engine version.  
 ## 2.12.4
 #### NewFeature:
 Add *IncludeChildren* parameter in FindChildByDisplayName and FindChildArrayByDisplayName function.  
