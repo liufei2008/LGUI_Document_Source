@@ -1,3 +1,23 @@
+## 2.12.7
+#### NewFeature:
+**Auto Manage Depth!**(Experimental) Automatically manage UI element's depth and drawcall, so we don't need to set *depth* property. Just check *autoManageDepth* property in LGUICanvas to make it work. This property will be made to true by default in future release.  
+Change anchor now can preserve relative UI position.  
+#### Modify:
+Add *Outer* parameter for *CreateLGUISpriteData* function.  
+Add *SetMinValue* *SetMaxValue* for UISlider.  
+LGUICanvas now can pool material when rebuild drawcall.  
+Add *Fix it* and *Fix all* button for LGUIPrefab if the prefab's version is older than current.  
+Add *Fix it* button for UIItem if the UIItem's *displayName* not equal to actor label.  
+Add *Preview* property for UISpriteSequencePlayer and UISpriteSheetTexturePlayer, so we can preview the sequence in editor.  
+Add *Project3DToScreen* function for LGUICanvasScaler, so we can project a screen-space 3D UI element's position to screen-space 2D.   
+Add hint text if there are multiple LGUIBaseRaycaster with similar parameter.  
+#### Fix:
+UIItem: Anchor calculation wrong.  
+UIDropdown: Update selections after *SetValue*.  
+LGUICanvas: *PixelPerfect* not update properly.  
+UITexture: If *SetTexture* with nullptr parameter then use default white texture.  
+Editor: *Focus to Screen-Space-UI* now take consider the UI's fov angle.  
+UIText: Render size now fit with screen size when LGUICanvasScaler scales canvas.  
 ## 2.12.6
 #### Modify:
 **PrefabSystem Update!** Now prefab can cook automatically. We don't need to *Recreate* the prefab if property field changed or version change, or any other reason.  
