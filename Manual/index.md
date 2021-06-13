@@ -97,6 +97,12 @@ These pages contain information about how to use LGUI.
 <div class="frontpage">
 
 <div class="frontpage-section">
+<a href="HowTos/UpdateTo2.13.0/index.md"></a>
+<h3><a href="HowTos/UpdateTo2.13.0/index.md">Update project to LGUI version 2.13.0</a></h3>
+<p>Update project to LGUI version 2.13.0</p>
+</div>
+
+<div class="frontpage-section">
 <a href="HowTos/FindChildByDisplayName/index.md"><img src="HowTos/FindChildByDisplayName/1.png"></a>
 <h3><a href="HowTos/FindChildByDisplayName/index.md">Find Child by DisplayName</a></h3>
 <p>Find Child by DisplayName</p>

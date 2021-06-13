@@ -1,5 +1,7 @@
 # UI How Tos
 
+<h3><a href="HowTos/UpdateTo2.13.0/index.md">Update project to LGUI version 2.13.0</a></h3>
+
 <h3><a href="ProjectWorldToScreen/index.md">Project world position to LGUI's screen position</a></h3>
 
 <h3><a href="DeprojectScreenToWorld/index.md">Deproject LGUI's screen position to world</a></h3>

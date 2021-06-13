@@ -1,3 +1,25 @@
+## 2.13.0
+#### Notes:
+There maybe compile errors when update to this version, just follow [this page](../HowTos/UpdateTo2.13.0/index.md) to fix it.  
+#### NewFeature:
+Add tip text for LGUICanvas's *SortOrder* property.  
+UITextInput can use a function to verify input.  
+Add tip text if anchor is controlled by multiple layout, which is not allowed.  
+Add *KillAllTweens* function for LTween.  
+Improve performance when packing atlas texture for LGUIFont.  
+Add **LGUIFontData_BaseObject** and **LGUISpriteData_BaseObject**, so we can implement our own font or sprite.  
+Add hit text if there are multiple screen-space-UI in a world.  
+Layout animation now support size and position animation, check *DragDrop* exsample.  
+Improve LGUIPrefab editor.  
+#### Modify:
+Layout update will execute late then LGUIBehaviours.  
+Change canvas icon's transparency in LGUIColumn.  
+#### Fix:
+LGUICanvas: *RenderTarget* mode renders wrong area.  
+UITextInput: Register submit event but called in changed condition.  
+Dropdown: Default dropdown's scrollbar not interactable.  
+LGUICanvas: *AutoManageDepth* not sort correct when use custom material.  
+UIItem: UI render not update when change pivot in editor.  
 ## 2.12.7
 #### NewFeature:
 **Auto Manage Depth!**(Experimental) Automatically manage UI element's depth and drawcall, so we don't need to set *depth* property. Just check *autoManageDepth* property in LGUICanvas to make it work. This property will be made to true by default in future release.  
@@ -73,7 +95,6 @@ Copy actor mark the actors not valid.
 Missing component when create from LGUI's prefab system. Turns out I put the component in wrong place.  
 Text render with a tiny black edge when in small size.  
 Nested canvas with rect clip, but sub canvas's clip value not update when position change.  
-
 ## 2.12.2
 #### NewFeature:
 Add tween function MeshMaterialScalarPrameterTo/ MeshMaterialVectorParameterTo, directly set tween animation for MeshComponent's material.  

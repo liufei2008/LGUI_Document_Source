@@ -43,6 +43,7 @@
 # [ReleaseNotes](ReleaseNotes/index.md)
 
 # [HowTos](HowTos/index.md)
+## [Update project to LGUI version 2.13.0](HowTos/UpdateTo2.13.0/index.md)
 ## [Project world position to LGUI's screen position](HowTos/ProjectWorldToScreen/index.md)
 ## [Deproject LGUI's screen position to world](HowTos/DeprojectScreenToWorld/index.md)
 ## [Use Custom Material](HowTos/CustomMaterial/index.md)
