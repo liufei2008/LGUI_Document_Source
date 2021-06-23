@@ -1,3 +1,15 @@
+## 2.13.1
+#### NewFeature:
+LGUIFont support UE4 build-in font, and support font's subface.  
+Support 32-bit indexbuffer, default is off, turn it on by modify LGUI.Build.cs.  
+Show tip text when indexbuffer out of range.  
+Add *SetScrollDelta* and *SetScrollValue* for UIScrollView, so we can mannually scroll it.  
+**UICustomDepthMask** component provide us the ability to mask out screen-space-UI with custom depth stencil. So that a character can stand *before* UI elements.  
+#### Modify:
+Improve UIText render and memory.  
+#### Fix:
+UIScrollView: Default created scrollview's scrollbar cannot interact.  
+ThumbnailRenderer: Pure virtual call caused crash.  
 ## 2.13.0
 #### Notes:
 There maybe compile errors when update to this version, just follow [this page](../HowTos/UpdateTo2.13.0/index.md) to fix it.  
