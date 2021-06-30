@@ -1,3 +1,10 @@
+## 2.13.2
+#### Modify:
+Optimize UIGridLayout.  
+#### Fix:
+*DynamicPixelsPerUnit* not working in world space UI.  
+UISprite and UIText display wrong uv when atlas texture change.  
+LGUICanvas: Drawcall sort incorrect in some case.  
 ## 2.13.1
 #### NewFeature:
 LGUIFont support UE4 build-in font, and support font's subface.  
