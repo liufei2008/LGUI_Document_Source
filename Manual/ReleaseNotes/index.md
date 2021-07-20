@@ -1,3 +1,14 @@
+## 2.14.0
+#### Modify:
+Rename UIRenderable to UIBatchGeometryRenderable.  
+Rename UIPostProcess to UIPostProcessRenderable.  
+**Remove** *AutoManageDepth*, because it's not working well but take a lot effort to maintain it.  
+#### NewFeature:
+Add new class UIDirectMeshRenderable, for directly modify mesh data for render. Currently it has been used for [Niagara ParticleSystem Renderer for LGUI](https://github.com/liufei2008/LGUI_ParticleSystem).  
+#### Fix:
+MultiSample not working without post process.  
+#### Improve:
+Optimize drawcall management, improve performance, reduce memory usage, minimize drawcall rebuild times.  
 ## 2.13.2
 #### Modify:
 Optimize UIGridLayout.  
