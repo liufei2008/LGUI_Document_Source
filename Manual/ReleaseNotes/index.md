@@ -1,3 +1,13 @@
+## 2.14.2
+#### Fix:
+SetWidth/SetHeight/SetAnchorOffsetX/SetAnchorOffsetY error when not in preferred anchor mode. eg: SetWidth when HorizontalAnchor is Stretch.  
+Crash if UIGeometryModifier not attached to a UIBatchGeometryRenderable.  
+UITextInputComponent now can input negative number.  
+Errors in compiled engine version.  
+## 2.14.1
+#### Fix:
+Shader error in particle material.  
+Editor: UIItem's detail panel not valid in blueprint editor.  
 ## 2.14.0
 #### Modify:
 Rename UIRenderable to UIBatchGeometryRenderable.  
