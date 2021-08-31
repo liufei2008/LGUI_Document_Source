@@ -1,3 +1,6 @@
+## 2.14.3
+#### Fix:
+SetCustomUIMaterial not working.  
 ## 2.14.2
 #### Fix:
 SetWidth/SetHeight/SetAnchorOffsetX/SetAnchorOffsetY error when not in preferred anchor mode. eg: SetWidth when HorizontalAnchor is Stretch.  
@@ -135,6 +138,7 @@ Copy actor mark the actors not valid.
 Missing component when create from LGUI's prefab system. Turns out I put the component in wrong place.  
 Text render with a tiny black edge when in small size.  
 Nested canvas with rect clip, but sub canvas's clip value not update when position change.  
+--Thanks to "陈靖中", he helped on debug/test/new-feature.  
 ## 2.12.2
 #### NewFeature:
 Add tween function MeshMaterialScalarPrameterTo/ MeshMaterialVectorParameterTo, directly set tween animation for MeshComponent's material.  
@@ -318,7 +322,7 @@ Add a blueprint function for runtime create LGUISpriteData.
 #### Fix:  
 Fix a crash caused by Raycaster.  
 Fix problems with undo system.  
---Thanks to "Wifi"(it's acturally a name), he helped testing this plugin.  
+--Thanks to "刘量", he helped testing this plugin.  
 ## 2.9.4  
 #### Fix:  
 Duplicated screen space UI on viewport, when PIE with multiplayer(player count more than 1).  
