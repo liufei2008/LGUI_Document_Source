@@ -1,6 +1,10 @@
 ## 2.14.3
 #### Fix:
 SetCustomUIMaterial not working.  
+Render order issue.  
+RectClip not working in children canvas.  
+#### Modify:
+ClipType behaviour: If not use OverrideClipType, then child canvas will use parent's clip parameter.  
 ## 2.14.2
 #### Fix:
 SetWidth/SetHeight/SetAnchorOffsetX/SetAnchorOffsetY error when not in preferred anchor mode. eg: SetWidth when HorizontalAnchor is Stretch.  
