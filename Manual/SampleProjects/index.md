@@ -21,6 +21,7 @@ Features:
 * Prefab
 * Controller input
 * TextAnimation
+* "TheDivision" like UI
 
 <hr>
 #### Si-fi UI

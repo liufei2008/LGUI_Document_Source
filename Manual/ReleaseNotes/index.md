@@ -1,3 +1,22 @@
+## 2.15.0
+#### Fix:
+Crash caused by UIItemEditorHelperComp.  
+Fix a potential crash in LGUIRenderer.  
+#### NewFeature:
+UIText now use FText to support **localization**. Check *TheDivision* demo of LGUI Tutorial Projects.    
+New render mode: **World Space - LGUI Renderer**. Render 3D UI in world space by LGUI's renderer, so it will not affect by UE's post process, and LGUI's post process will work(eg. UIBackgroundBlur).  
+#### Modify:
+LTween: LTweener's outer use binded UObject.  
+Editor: Show a message if there are multiple ScreenSpaceUI, which is not allowed.  
+UIStaticMesh more stable.  
+LGUIPrefab: When click "CreatePrefab" or "Apply" button, other prefabs won't saved to current prefab.  
+LGUIPrefab: Now use "ActorGUID" property as actor's key, so UE4.25 will not support anymore.  
+Remove "ComboBox" and "FlyoutMenu".  
+Remove "ViewportUITexture" and "UITextureBox".  
+Show UIBaseActor's "Actor" and "Rendering" category.  
+Add *PriorityInScenViewExtension* to renderer. Because LGUI's renderer use UE's view extension, so this value can help LGUI's renderer to sort with other view extensions, higher comes first.  
+UIItem: Rename *SetUIActive* to *SetIsUIActive*, *IsUIActiveSelf* to *GetIsUIActiveSelf*, *IsUIActiveInHierarchy* to *GetIsUIActiveInHierarchy*.  
+Rename LGUI_XXXRayEmiter to LGUI_XXXRayemitter.  
 ## 2.14.3
 #### Fix:
 SetCustomUIMaterial not working.  
