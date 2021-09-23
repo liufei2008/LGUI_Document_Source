@@ -86,6 +86,16 @@ These pages contain information about how to use LGUI.
 <p>UI How Tos</p>
 </div>
 
+<div class="frontpage-others">
+<h3><a href="LGUIBehaviour/index.md">LGUIBehaviour life cycle</a></h3>
+<p>LGUIBehaviour life cycle</p>
+</div>
+
+<div class="frontpage-others">
+<h3><a href="LGUIRenderFlow/index.md">LGUI render flow</a></h3>
+<p>LGUI render flow</p>
+</div>
+
 <!-- <div class="frontpage-others">
 <h3><a href="ThanksTo/index.md">ThanksTo...</a></h3>
 <p>Thanks to those guys who helped with this plugin</p>
@@ -95,6 +105,18 @@ These pages contain information about how to use LGUI.
 ## New docs
 <hr>
 <div class="frontpage">
+
+<div class="frontpage-section">
+<a href="LGUIBehaviour/index.md"></a>
+<h3><a href="LGUIBehaviour/index.md">LGUIBehaviour life cycle</a></h3>
+<p>LGUIBehaviour life cycle</p>
+</div>
+
+<div class="frontpage-section">
+<a href="LGUIRenderFlow/index.md"></a>
+<h3><a href="LGUIRenderFlow/index.md">LGUI render flow</a></h3>
+<p>LGUI render flow</p>
+</div>
 
 <div class="frontpage-section">
 <a href="HowTos/UpdateTo2.13.0/index.md"></a>

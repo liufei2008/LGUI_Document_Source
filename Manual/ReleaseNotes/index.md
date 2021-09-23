@@ -9,8 +9,10 @@ New render mode: **World Space - LGUI Renderer**. Render 3D UI in world space by
 LTween: LTweener's outer use binded UObject.  
 Editor: Show a message if there are multiple ScreenSpaceUI, which is not allowed.  
 UIStaticMesh more stable.  
-LGUIPrefab: When click "CreatePrefab" or "Apply" button, other prefabs won't saved to current prefab.  
 LGUIPrefab: Now use "ActorGUID" property as actor's key, so UE4.25 will not support anymore.  
+LGUIPrefab: When click "CreatePrefab" or "Apply" button, other prefabs won't saved to current prefab.  
+LGUIPrefab: When click "Revert" button, LGUI will keep created actors and apply values to the them, the old method is just delete and recreate them all.  
+LGUIPrefab: Automaticlly cleanup useless LGUIPrefabActor.  
 Remove "ComboBox" and "FlyoutMenu".  
 Remove "ViewportUITexture" and "UITextureBox".  
 Show UIBaseActor's "Actor" and "Rendering" category.  

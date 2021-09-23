@@ -49,3 +49,7 @@
 ## [Use Custom Material](HowTos/CustomMaterial/index.md)
 ## [Disable interaction component](HowTos/DisableInteractionComponent/index.md)
 ## [Find Child by DisplayName](HowTos/FindChildByDisplayName/index.md)
+
+# [LGUIBehaviour life cycle](LGUIBehaviour/index.md)
+
+# [LGUI render flow](LGUIRenderFlow/index.md)
