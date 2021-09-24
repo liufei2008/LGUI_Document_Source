@@ -2,9 +2,11 @@
 #### Fix:
 Crash caused by UIItemEditorHelperComp.  
 Fix a potential crash in LGUIRenderer.  
+Wrong layout after SetIsUIActive in some case.  
 #### NewFeature:
 UIText now use FText to support **localization**. Check *TheDivision* demo of LGUI Tutorial Projects.    
 New render mode: **World Space - LGUI Renderer**. Render 3D UI in world space by LGUI's renderer, so it will not affect by UE's post process, and LGUI's post process will work(eg. UIBackgroundBlur).  
+Editor: Add a toggle **Show LGUI column in SceneOutliner** in *LGUI Tools*, which can show or hide LGUI's functions column in SceneOutliner.  
 #### Modify:
 LTween: LTweener's outer use binded UObject.  
 Editor: Show a message if there are multiple ScreenSpaceUI, which is not allowed.  
