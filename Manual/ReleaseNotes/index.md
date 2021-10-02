@@ -1,10 +1,14 @@
+## 2.15.1
+#### NewFeature:
+LGUIDrawableEvent now support FText and FName.  
+Add LGUIDrawableEvent_Name and LGUIDrawableEvent_Text.  
 ## 2.15.0
 #### Fix:
 Crash caused by UIItemEditorHelperComp.  
 Fix a potential crash in LGUIRenderer.  
 Wrong layout after SetIsUIActive in some case.  
 #### NewFeature:
-UIText now use FText to support **localization**. Check *TheDivision* demo of LGUI Tutorial Projects.    
+UIText now use FText to support **localization**. Check *TheDivision* demo of [LGUI Tutorial](https://github.com/liufei2008/LGUI_Tutorial.git) Projects.    
 New render mode: **World Space - LGUI Renderer**. Render 3D UI in world space by LGUI's renderer, so it will not affect by UE's post process, and LGUI's post process will work(eg. UIBackgroundBlur).  
 Editor: Add a toggle **Show LGUI column in SceneOutliner** in *LGUI Tools*, which can show or hide LGUI's functions column in SceneOutliner.  
 #### Modify:
