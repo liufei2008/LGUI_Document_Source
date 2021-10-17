@@ -1,3 +1,12 @@
+## 2.15.2
+#### NewFeature:
+LGUISpriteData add *padding* property, which is compatible for *TexturePacker*'s trim mode.  
+StandaloneInputModule now support multiple mouse input in one frame.  
+#### Modify:
+Use ILGUICultureChangeInterface to implement culture change.  
+#### Fix:
+UISprite render wrong when fill mode set to radial360.  
+Crash when use LGUITools/CopyActor.  
 ## 2.15.1
 #### NewFeature:
 LGUIDrawableEvent now support FText and FName.  
