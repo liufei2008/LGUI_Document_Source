@@ -1,3 +1,19 @@
+## 2.15.3
+#### Modify:
+LGUIMeshComponent now use multiple mesh sections, this is good for LGUICanvas to manage drawcall, so multiple drawcall mesh can sit inside one LGUIMeshComponent.  
+CustomMaterial: MaterialInstanceDynamic will check parameter then decide if it need to create, if the CustomMaterial have LGUI needed parameter (eg. MainTexture, RectClipOffsetAndSize, RectClipFeather ...), then MaterialInstanceDynamic will be created for the CustomMaterial.  
+UIItem now can update independently without LGUICanvas.  
+Rename LGUIPrefabActor to LGUIPrefabHelperActor.  
+*RaycastComplex* property move to UIBaseRenderable.  
+#### Fix:
+Fix drawcall split & combine error, which cause wrong rendering order.  
+UIPostProcess effect removed if change parameter in editor.   
+Fix a potential crash caused by LGUIUtils::EditorNotifacation.  
+Fix *SetScrollValue* function in UIScrollView.  
+#### NewFeature:
+Add static function *ForceUpdateLayout* in LGUIManagerActor which is useful when you need to refrsh layout multiple times in one frame.  
+Add function *ForceUpdate* in LGUICanvasScaler.  
+Add function *SetScrollProgress* in UIScrollView.  
 ## 2.15.2
 #### NewFeature:
 LGUISpriteData add *padding* property, which is compatible for *TexturePacker*'s trim mode.  
