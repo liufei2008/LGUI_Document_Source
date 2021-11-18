@@ -1,3 +1,6 @@
+## 2.15.4
+#### Fix:
+Fix UIStaticMesh crash game after package. Turns out we can't access mesh's vertex/index data after package, so I use *LGUIStaticMeshCacheData* to store mesh's data in editor, then pass to UIStaticMesh in packaged game(Just like UMG does with SMeshWidget).  
 ## 2.15.3
 #### Modify:
 LGUIMeshComponent now use multiple mesh sections, this is good for LGUICanvas to manage drawcall, so multiple drawcall mesh can sit inside one LGUIMeshComponent.  
