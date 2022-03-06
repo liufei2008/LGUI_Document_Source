@@ -6,3 +6,6 @@
 - name: CurvyText
   href: CurvyText/
   homepage: CurvyText/index.md
+- name: Effect
+  href: Effect/
+  homepage: Effect/index.md
