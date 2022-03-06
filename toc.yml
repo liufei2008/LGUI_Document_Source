@@ -1,5 +1,8 @@
 - name: Documentation
   href: index.md
-- name: Manual
-  href: Manual/
-  homepage: Manual/index.md
+- name: LGUI
+  href: LGUI/
+  homepage: LGUI/index.md
+- name: CurvyText
+  href: CurvyText/
+  homepage: CurvyText/index.md
