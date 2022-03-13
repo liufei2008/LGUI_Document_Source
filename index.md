@@ -15,10 +15,4 @@
 <p>Introduce to CurvyText for LGUI</p>
 </div>
 
-<div class="frontpage-section">
-<a href="Effect/index.md"><img src="Effect/icon.jpg"></a>
-<h3><a href="Effect/index.md">Effect Manual</a></h3>
-<p>Introduce to Blueprint implemented effects for LGUI</p>
-</div>
-
 </div>

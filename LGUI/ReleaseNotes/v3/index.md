@@ -1,3 +1,15 @@
+## 3.1.1
+#### NewFeature:
+LGUIPrefab compatible with UE5.  
+Add *SelectorOffset* property for UIEffectTextAnimation, make it easier for LGUIPrefaSequence animation.  
+#### Fix:
+Crash if missing some class reference on LGUIPrefab, now a hint message-box will popup.  
+Crash when rename LGUIPrefabSequence's animation.  
+Missing track when rename LGUIPrefabSequence's animation.  
+#### Modify:
+**Remove MSAA**, because not work as intended.  
+Change some blueprint function of PrefabSequenceComponent.  
+
 ## 3.1.0
 #### Improvement:
 Modify UI geometry generation, now the update process is simple & easy & fast. Easy for blueprint to extend custom UI element, easy for blueprint to implement custom GeometryModifier.  
