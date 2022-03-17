@@ -1,3 +1,13 @@
+## 3.1.2
+#### NewFeature:
+LGUICanvas can prevent drawcall batch if reach max vertex count.  
+LGUIPrefabSequence can fix missing bad track reference, based on actor label and actor hierarchy.  
+#### Fix:
+LGUIPrefab: Add more check and hint to prevent crash when missing some class reference.  
+UIScrollbar: Wrong value when click UIScrollbar's background area.  
+#### PerformanceUpgrade:
+AutoBatch now take less cpu resource, check [this article](https://blog.csdn.net/lf2007hf/article/details/123529163).  
+
 ## 3.1.1
 #### NewFeature:
 LGUIPrefab compatible with UE5.  
