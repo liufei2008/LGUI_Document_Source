@@ -1,3 +1,9 @@
+## 3.1.3
+#### NewFeature:
+LGUICanvas RenderTarget mode now production ready! With LGUIRenderTargetGeometrySource and LGUIRenderTargetInteraction components, we can make curved UI for VR!  
+#### PerformanceUpgrade:
+Directly render to backbuffer, so we can save two RenderTarget and two CopyRenderTarget. If android GLES3.1 and we need some LGUI's prostprocess effects (UIBackgroundBlur & UIBackgroundPixelate), we need to check "ProjectSettings/Platforms/Android/Build/Support Backbuffer Sampling on OpenGL".  
+
 ## 3.1.2
 #### NewFeature:
 LGUICanvas can prevent drawcall batch if reach max vertex count.  
