@@ -78,7 +78,7 @@
 
 # [HowTos](HowTos/index.md)
 
-## [Update project to LGUI version 2.13.0](HowTos/UpdateTo2.13.0/index.md)
+## [Update project from LGUI2 to LGUI3](HowTos/UpdateTo3/index.md)
 
 ## [Project world position to LGUI's screen position](HowTos/ProjectWorldToScreen/index.md)
 
