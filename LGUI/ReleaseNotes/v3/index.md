@@ -1,3 +1,15 @@
+## 3.1.4
+#### NewFeature:
+Officially support MacOSX and IOS!  
+Add *SetCanvas* blueprint function for LGUIRenderTargetGeometry.  
+#### Fix:
+Fix linux compile error.  
+Fix black screen on android with vulkan, caused by wrong RenderTargetActions.  
+Fix UIText and UISprite atlas packing error in some specific case, which can result in misplaced text character or sprite.  
+Fix PostProcess clip error.  
+#### Modify:
+Strip K2Node from LGUIEditor to LGUIK2Nodes module.  
+
 ## 3.1.3
 #### NewFeature:
 LGUICanvas RenderTarget mode now production ready! With LGUIRenderTargetGeometrySource and LGUIRenderTargetInteraction components, we can make curved UI for VR!  
