@@ -6,6 +6,7 @@ Fix crash when multiple user editing on LGUIEventDelegate.
 SetSprite could have no effect in some condition.  
 UIPolygon and UI2DLineRendererBase my not update as desired.  
 UIRoundedLayout wrong coordinate.  
+Nested LGUICanvas may result in soring issue.  
 
 ## 3.1.4
 #### NewFeature:
