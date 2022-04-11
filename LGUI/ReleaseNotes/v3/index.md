@@ -1,3 +1,9 @@
+## 3.1.6
+#### Modify:
+Cleanup code and fix some bugs for UE5.  
+#### NewFeature:
+PrefabEditor now can restore RootAgent actor's size and render mode.  
+
 ## 3.1.5
 #### NewFeature:
 ClipTexture now support UI's LineTrace.  
