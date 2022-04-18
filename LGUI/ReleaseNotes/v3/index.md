@@ -1,8 +1,16 @@
+## 3.1.7
+#### NewFeature:
+UIPostProcess can render *MaskTexture* as sliced.  
+#### Fix:
+Fix crash when create child LGUICanvas or UIPostProcess.  
+
 ## 3.1.6
 #### Modify:
 Cleanup code and fix some bugs for UE5.  
 #### NewFeature:
 PrefabEditor now can restore RootAgent actor's size and render mode.  
+#### Fix:
+Fix crash when add new ActorComponent to sub prefab's actor then apply, now popup a hint message.  
 
 ## 3.1.5
 #### NewFeature:
