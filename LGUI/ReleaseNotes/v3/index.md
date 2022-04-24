@@ -1,3 +1,12 @@
+## 3.1.8
+#### NewFeature:
+**UIRecyclableScrollView** ready now.  
+UIScrollView add new function *GetVelocity* *SetVelocity* *GetScrollProgress*, add new property *DecelerateRate* *OutOfRangeDamper*.  
+#### Fix:
+Fix LGUICanvas sorting error when render type is WorldSpace-LGUIRenderer.  
+#### Modify:
+Remove ILGUIPointerDownUpInterface from UIScrollView.  
+
 ## 3.1.7
 #### NewFeature:
 UIPostProcess can render *MaskTexture* as sliced.  
