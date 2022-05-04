@@ -1,3 +1,16 @@
+## 3.1.9
+#### NewFeature:
+ScreenSpaceUI can draw selection helper frame, with a toggle box in *LGUI Tools* menu.  
+Mobile can use external joystick input, just like standalone platform.  
+Add visualization arrow for UISelectable navigation.  
+#### Fix:
+Fix crash when create custom font.  
+Fix crash when delete LGUIPrefabHelperActor, add some hints.  
+Remove extra wrong vertex data in UIEffect.  
+Fix UIText font size change unnormally.  
+Fix navigation input get wrong UISelectable.  
+UE5 LGUIEditor's outliner can't modify hierarchy or select multiple.  
+
 ## 3.1.8
 #### NewFeature:
 **UIRecyclableScrollView** ready now.  
