@@ -9,7 +9,11 @@ Fix crash when delete LGUIPrefabHelperActor, add some hints.
 Remove extra wrong vertex data in UIEffect.  
 Fix UIText font size change unnormally.  
 Fix navigation input get wrong UISelectable.  
-UE5 LGUIEditor's outliner can't modify hierarchy or select multiple.  
+Fix *Active Viewport as LGUI Preview* not working.  
+Fix UE5 LGUIEditor's outliner can't modify hierarchy or select multiple.  
+Fix UE5 LGUIPrefabSequence crash when add new animation.  
+#### Modify:
+Remove *DefaltTraceChannel* in LGUI Settings.  
 
 ## 3.1.8
 #### NewFeature:
