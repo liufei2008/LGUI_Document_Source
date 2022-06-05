@@ -1,3 +1,27 @@
+## 3.2.1
+#### NewFeature:
+ScreenSpaceUI now support normal and tangent property, this is very useful for UIStaticMesh.  
+Add new depth-test mode for LGUICanvas's WorldSpace-LGUIRenderer mode, use depth buffer to direct test depth.  
+#### Fix:
+Fix android gles flipped face.  
+LGUIRenderTargetGeometrySource not create geometry.  
+Fix crash caused by UIStaticMesh.  
+Fix crash caused by LGUIPrefabEditor when perform GC at BeginPlay.  
+Fix package issue for UE5 because of old LGUIPrefab version.  
+#### Modify:
+For UE5, change UIScrollbar's event from float to double. Same on UISlider.   
+#### PerformanceUpgrade:
+Optimize LGUI's vertex data.  
+
+## 3.2.0
+#### NewFeature:
+**SDF(SignedDistanceField) text rendering** now ready to use!  
+LGUIPrefabSequence now support curve editor.  
+#### Fix:
+Fix crash when undo in LGUIPrefabEditor (with LGUIPrefabSequence editor window opened).  
+#### PerformanceUpgrade:
+Optimize data passed from game-thread to render-thread, mesh update become more efficient.  
+
 ## 3.1.9
 #### NewFeature:
 ScreenSpaceUI can draw selection helper frame, with a toggle box in *LGUI Tools* menu.  
