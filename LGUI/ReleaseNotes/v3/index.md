@@ -1,3 +1,13 @@
+## 3.2.2
+#### NewFeature:
+Enable **DepthTest** for ScreenSpaceUI and RenderTargetUI!  
+#### Fix:
+Fix crash caused by UIStaticMesh.  
+Fix update issue of UIStaticMesh.  
+Fix crash of LTween when MaterialInstanceDynamic have no world.  
+Fix crash when reset scrollbar parameter of UIScrollView.  
+For UE5, fix sprite become transparent in editor sometimes, this is because UE5 use async texture compile.  
+
 ## 3.2.1
 #### NewFeature:
 ScreenSpaceUI now support normal and tangent property, this is very useful for UIStaticMesh.  
