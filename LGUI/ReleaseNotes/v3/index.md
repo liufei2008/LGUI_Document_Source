@@ -1,3 +1,9 @@
+## 3.2.3
+#### Fix:
+Fix sub-prefab's root actor's data error.  
+Fix crash when copy actor with sub-prefab.  
+Fix wrong hierarchy index with sub-prefab's root actor.  
+
 ## 3.2.2
 #### NewFeature:
 Enable **DepthTest** for ScreenSpaceUI and RenderTargetUI!  
