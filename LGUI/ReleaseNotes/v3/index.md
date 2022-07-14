@@ -1,3 +1,21 @@
+## 3.2.5
+#### PerformanceUpgrade:
+Optimize raycast check on UIItem.  
+#### Fix:
+Fix object reference with PrepareDuplicateData node.  
+Fix spawn UIItem take too much time in UE5 editor.  
+
+## 3.2.4
+#### NewFeature:
+Add a optimized version of DuplicateActor when duplicate a same actor multiple times, check *LGUIBPLibrary::PrepareDuplicateData* node.   
+Add some helper editor button for LGUIEventDelegate.  
+#### Fix:
+Fix a crash when prefab serialize a invalid actor.  
+Fix SDF font rendering issue in different camera fov and projection type.  
+Fix a crash when LGUIEventDelegate(float) in UE5.  
+#### PerformanceUpgrade:
+Optimize UIItem's intialization, save time when spawn any UI element.  
+
 ## 3.2.3
 #### Fix:
 Fix sub-prefab's root actor's data error.  
