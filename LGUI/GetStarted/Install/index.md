@@ -7,20 +7,17 @@ Visit page https://www.unrealengine.com/marketplace/en-US/product/lgui-lex-gui-3
 
 After install complete, create an empty project. Open plugins menu and check LGUI "Enabled" (restart engine may needed).
 
-#### 2. Get trial version from github (no source code).
+#### 2. Get trial version from OneDrive.
 
-Visit page https://github.com/liufei2008/LGUI--trail-version-package :
-    ![github](github.png)
+This is a prebuild binary, only valid for Win64 editor, no source code included.  
 
-Click left top branch button and choose your desired UnrealEngine version:
-    ![step1](github1.png)
+Visit page https://1drv.ms/u/s!AvirIdGUD62un01B1O4v3BGSMWxN?e=aZbgmO 
+Choose your desired UnrealEngine version and download it:
+    ![onedirve](trailversion1.png)
 
-Then click "Download ZIP" button:
-    ![step2](github2.png)
-
-Create an empty project(trial version only support **Blueprint** project). In the project folder, create "Plugins" folder, and unzip the zip file you just downloaded in the "Plugins" folder. Should be like this:
-    ![step3](github3.png)
-    ![step4](github4.png)
+Create an empty project(trial version only support **Blueprint** project). In your project folder, create "Plugins" folder, and unzip the zip file you just downloaded in the "Plugins" folder. Should be like this:
+    ![step3](trailversion2.png)
+    ![step4](trailversion3.png)
 
 #### 3. If LGUI is installed correctly, then a "LGUI Tools" button should appear on the menu bar:**
 ![step3](install_complete.png)
