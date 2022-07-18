@@ -1,3 +1,10 @@
+## 3.2.6
+#### Fix:
+Fix crash when add LGUIRenderTargetGeometrySource component to a actor.  
+#### Change:
+Navigation input now relate to LGUIPointerEventData.  
+Default UISelectable for navigation input now return most left-top one.  
+
 ## 3.2.5
 #### PerformanceUpgrade:
 Optimize raycast check on UIItem.  
