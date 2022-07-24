@@ -1,3 +1,7 @@
+## 3.2.7
+#### Fix:
+Fix bug that cannot drag prefab to level and create actor.  
+
 ## 3.2.6
 #### Fix:
 Fix crash when add LGUIRenderTargetGeometrySource component to a actor.  
