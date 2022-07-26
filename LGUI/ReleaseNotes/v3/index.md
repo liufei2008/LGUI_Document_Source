@@ -1,3 +1,11 @@
+## 3.2.8
+#### Fix:
+Fix UIText wrong rendering caused by layout.  
+#### PerformanceUpgrade:
+UIText will not build all geometry if only color change.  
+#### Change:
+Add LGUINavigationInterface as replacement of UISelectable's OnNavigate.  
+
 ## 3.2.7
 #### Fix:
 Fix bug that cannot drag prefab to level and create actor.  
