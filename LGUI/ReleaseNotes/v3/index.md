@@ -1,3 +1,14 @@
+## 3.2.9
+#### NewFeature:
+PrefabEditor now support drag-drop to create Actor and StaticMesh.  
+UIRecyclableScrollView now support *Space* and *Padding* parameter, and some new functions.  
+#### Fix:
+Fix bug: When put a LGUILifeCycleBehaviour (not UI behaviour) on a UI object, the OnEnable and OnDisable will not work when UI's IsUIActive changes to true or false.  
+#### Modify:
+Replace some check(0) as PrintStackTrace, to prevent crash and get the error message.  
+#### Change:
+Sub prefab's default overrided parameter now only contains hierarchy index, ActorLabel and AnchorData is removed.  
+
 ## 3.2.8
 #### Fix:
 Fix UIText wrong rendering caused by layout.  
