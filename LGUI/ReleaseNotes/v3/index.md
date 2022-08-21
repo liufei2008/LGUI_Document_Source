@@ -1,3 +1,15 @@
+## 3.2.10
+#### Fix:
+Fix bug: Crash when create prefab in UE5 OpenWorld.  
+Fix bug: Duplicated actor disappear when hit play.  
+Fix bug: Wrong render order caused by sub-prefab.  
+#### NewFeature:
+Add *MaxHeight* property for UIDropdownComponent, so we can set max height of the options list.  
+PrefabEditor now can delete RootAgent's LGUICanvas component, LGUI will mark it after hit *Apply*. Next time open the PrefabEditor, the LGUICanvas component will not create for RootAgent. This is useful when make a root canvas as prefab.  
+#### Change:
+UIRecyclableScrollView now don't need to change element's pivot.  
+UIRecyclableScrollView.GetCellItembyDataIndex function parameter change.  
+
 ## 3.2.9
 #### NewFeature:
 PrefabEditor now support drag-drop to create Actor and StaticMesh.  
