@@ -1,6 +1,15 @@
+## 3.2.11
+#### Fix:
+Fix bug: Nested prefab may lose object reference due to actor deserialize order.  
+Fix crash: Crash when duplicate sub prefab.  
+Fix bug: UITextInput, when hold down a key and press other keys, then input value is always the first key's value.  
+Fix bug: Reparent UI element could get wrong rotation and scale value.  
+#### NewFeature:
+UIRecyclableScrollView: New function *GetUserFriendlyCacheCellList* can return cell list with user-friendly order.  
+
 ## 3.2.10
 #### Fix:
-Fix bug: Crash when create prefab in UE5 OpenWorld.  
+Fix crash: Crash when create prefab in UE5 OpenWorld.  
 Fix bug: Duplicated actor disappear when hit play.  
 Fix bug: Wrong render order caused by sub-prefab.  
 #### NewFeature:
