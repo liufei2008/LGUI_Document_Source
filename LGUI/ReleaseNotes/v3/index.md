@@ -1,3 +1,19 @@
+## 3.2.12
+#### Fix:
+Fix bug: BlendDepth get wrong uv coordinate when sample depth texture, when choose different graphic scalability.  
+Fix bug: Can't use LGUIPrefab as blueprint variable.  
+Fix bug: LGUILifeCycleBehaviour could miss calling Awake/OnEnable/Start if not IsUIActive at first time.  
+#### Change:
+Add some LTween animation function to UI element.  
+LGUIScreenSpaceRaycaster *depth* parameter default is 1000, much bigger then LGUIWorldSpaceRaycaster.  
+Default LGUIPrefab in LGUI's content folder will not package in game.  
+SDFFont: Move ObjectScale parameter to shader code, incase the parameter not update when just scale UIText object.  
+If we put LGUIPrefab asset in a folder named *EditorOnly*, then the prefabs will not be packaged in game.  
+#### NewFeature:
+UIRecyclableScrollView can use LGUIPrefab as CellTemplate.  
+LTween now use GameInstanceSubsystem to manage all the tweeners, so cross level tween animation is good to go.  
+UIPostProcess get new parameter *MaskTextureUVRect*, so we can have more control on mask texture.  
+
 ## 3.2.11
 #### Fix:
 Fix bug: Nested prefab may lose object reference due to actor deserialize order.  
@@ -227,7 +243,7 @@ Fix bug: LGUILifeCycleBehaviour.SetCanExecuteUpdate not wroking.
 Use hierarchy order for UI element's render order, no noring "Depth" property anymore.  
 Prefab workflow upgrade: Standalone prefab editor, support **Nested Prefab**, support property redirect, faster load speed. (Many thanks to "马志愿", great inspire)  
 #### Change:
-Coornidate system: from Unity-like (x-right, y-up, z-forward) to UE-like (x-forward, y-right, z-up) coordinate system.  
+Coordinate system: from Unity-like (x-right, y-up, z-forward) to UE-like (x-forward, y-right, z-up) coordinate system.  
 Color property: UIItem.Widget.Color moved to UIBaseRenderable.Color.
 UICanvasGroup: Handle children UI element's opacity and interactable.
 Anchor system: LGUI3 use AnchorMin/AnchorMax/AnchoredPosition/SizeDelta anchor system, just like Unity's, clean and predictable.  
