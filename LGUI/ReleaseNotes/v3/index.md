@@ -1,3 +1,22 @@
+## 3.2.13
+#### NewFeature:
+New function *ScrollTo* for UIScrollView. This function can scroll the scrollview to specific child. Same function added on UIRecyclableScrollView with name "ScrollToByDataIndex".  
+New parameter *AutoActivateInputWhenNavigateIn* for UITextInput. This can active input when navigate in UITextInput.  
+New function *ActivateNavigationInput* for LGUIEventSystem, allow us to activate navigation input from c++ or blueprint.  
+New function *SetPointerInputType* for LGUIEventSystem, allow us to change input type to Pointer or Navigation.
+#### Fix:
+Fix bug: Get wrong actor label when use LGUI to duplicate or paste actor.  
+Fix bug: UITextInput's *IgnoreKeys* property not working in UE5 and UE4.27.  
+Fix bug: UITextInput's details panel have wrong order with navigation parameters.  
+Fix bug: UITextInput can copy or cut password.  
+Fix bug: If set LGUIComponentReference in code, then we can't get value from it.  
+#### Change:
+When turn off *PreserveHierarhyState* in LGUI-Tools menu, LGUIEditorLevelDataStorageActor will also be deleted.  
+InputChangeDelegate move from LGUIPointerInputModule to LGUIEventSystem.  
+#### Improvement:
+Optimize LGUIPrefab's thumbnail, size property will also take effect on thumbnail.  
+LGUIPrefabSequence: Click on actor in sequence can also select actor in outliner and level editor.  
+
 ## 3.2.12
 #### Fix:
 Fix bug: BlendDepth get wrong uv coordinate when sample depth texture, when choose different graphic scalability.  
