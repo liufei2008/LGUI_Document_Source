@@ -1,3 +1,19 @@
+## 3.2.14
+#### NewFeature:
+Support for Linux dedicated server build.  
+Editor "eye" toggle now can control UI element's *IsUIActive* property.  
+New parameter *UVRectControlMode* for UITexture, allow us to automatically set *UVRect* parameter to keep texture's aspect ratio and fit in UITexture element.  
+New parameter *UseInteractionBlock* for UIDropdown, for decide if we need to create a interaction blocker when open option list.  
+New function *SetItemCustomDataFunction* for UIDropdown, allow us to customize option-list item.  
+New parameter *MultiLineSubmitFunctionKeys* for UITextInput, use the key combine with "Enter" key for multi-line mode submit.  
+New function *RepeatCall* for LTween, allow us to call a function repeat repeatedly with an interval time.  
+New input type *Alphanumeric* & *EmailAddress* for UITextInput.  
+New parameter *DisplayType* for UITextInput, allow us to use password display. This parameter is split from *InputType*, so we can verify our input for password too.  
+#### Improvement:
+Prefab thumbnail rendering improvement.   
+#### Fix:
+Fix bug: Blueprint inherit LGUILifeCycleBehaviour not call Awake event.  
+
 ## 3.2.13
 #### NewFeature:
 New function *ScrollTo* for UIScrollView. This function can scroll the scrollview to specific child. Same function added on UIRecyclableScrollView with name "ScrollToByDataIndex".  
