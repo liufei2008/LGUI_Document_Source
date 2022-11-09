@@ -1,3 +1,29 @@
+## 3.2.15
+#### NewFeature:
+New parameter *FallbackFontArray* for LGUIFontData: If can't find character in current font, then will search it in *FallbackFontArray* and render it.  
+New function *LoadPrefabWithReplacement* for LGUIPrefab, allow us to replace some assets of classes before load a prefab and keep parameter reference. eg: replace parent class with sub class so they can use same prefab.  
+New type LGUIPrefabVarient for LGUIPrefab: Use existing prefab as base object, and do some parameter override; You can select existing prefab in content browser and right click it to open menu, and select Create.  
+New parameter *RestrictNavigationArea* for UICanvasGroup: For navigation input select, restrict navigation select area so always cycle inside children of this UI node.  
+#### Fix:
+Fix bug: WorldSpace-LGUI-Renderer get wrong uv coordinate when sample depth texture.  
+Fix bug: *Replace This With* break hierarchy index.  
+Fix bug: PrefabEditor viewport, click to select now ignore inactive UI element.  
+Fix bug: Delete sub prefab in PrefabEditor then undo it, will lose sub prefab reference.  
+Fix bug: Select multiple UIItem then anchor editor will go wrong.  
+Fix bug: Sub prefab not recognize some parameter change.  
+Fix crash: Crash if LGUIComponentReference lose *TargetComp* reference.  
+Fix bug: 3D UI rendering wrong when LGUICanvas's *PixelPerfect* mode is on.  
+Fix bug: UIRecyclableScrollView not clear cells when data count is 0.  
+Fix bug: LGUICanvas draw in wrong order when: Child canvas set inactive and after a while set to active.  
+Fix bug: Wrong calculation on UISizeControlByAspectRatio and UITexture with UVRectControlMode.  
+#### Improvement:
+Add more function for UISelectableComponent.  
+Click in PrefabEditor to select UI element, if mouse not moved, then next click will cycle select UI elements under mouse pointer.  
+PrefabEditor's outliner can keep actor's unexpend state.  
+Prefab-override-parameter now can do apply or revert parameter on sub prefab's single selected actor.  
+Show a hint text if there are multiple layout control same anchor value.  
+UICanvasGroup's alpha now can control RichText color's alpha value.  
+
 ## 3.2.14
 #### NewFeature:
 Support for Linux dedicated server build.  
@@ -19,7 +45,7 @@ Fix bug: Blueprint inherit LGUILifeCycleBehaviour not call Awake event.
 New function *ScrollTo* for UIScrollView. This function can scroll the scrollview to specific child. Same function added on UIRecyclableScrollView with name "ScrollToByDataIndex".  
 New parameter *AutoActivateInputWhenNavigateIn* for UITextInput. This can active input when navigate in UITextInput.  
 New function *ActivateNavigationInput* for LGUIEventSystem, allow us to activate navigation input from c++ or blueprint.  
-New function *SetPointerInputType* for LGUIEventSystem, allow us to change input type to Pointer or Navigation.
+New function *SetPointerInputType* for LGUIEventSystem, allow us to change input type to Pointer or Navigation.  
 #### Fix:
 Fix bug: Get wrong actor label when use LGUI to duplicate or paste actor.  
 Fix bug: UITextInput's *IgnoreKeys* property not working in UE5 and UE4.27.  

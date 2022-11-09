@@ -12,3 +12,6 @@ LTween provide some handy functions for work:
 
 **RegisterUpdateEvent | UnregisterUpdateEvent**- Register the "Update" event so it will be executed every frame, until unregistered.
 ![](step4.png)
+
+**RepeatCall**- Repeatly call function with given interval time:
+![](step5.png)
