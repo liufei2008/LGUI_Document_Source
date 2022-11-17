@@ -1,3 +1,11 @@
+## 3.2.16
+#### Fix:
+Fix OnValueChange event type of UISlider and UIScrollbar in UE5.  
+Fix bug: when change *IsUIActive* on sub prefab, parent prefab not update visibility of the sub prefab.  
+#### Improvement:
+Sub prefab will get different color in prefab editor's outliner, for easily identify.  
+When drag-drop other prefab to create sub prefab in prefab editor, the newly created sub prefab actor will be fold in outliner.  
+
 ## 3.2.15
 #### NewFeature:
 New parameter *FallbackFontArray* for LGUIFontData: If can't find character in current font, then will search it in *FallbackFontArray* and render it.  
