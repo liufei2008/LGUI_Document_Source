@@ -1,5 +1,7 @@
 ## 3.2.16
 #### Fix:
+Fix bug: UI not render when enable ODSC (On Demand Shader Compiler).  
+Fix bug: Wrong sort order in WorldSpaceUERender mode.  
 Fix OnValueChange event type of UISlider and UIScrollbar in UE5.  
 Fix bug: when change *IsUIActive* on sub prefab, parent prefab not update visibility of the sub prefab.  
 #### Improvement:
