@@ -1,3 +1,23 @@
+## 3.2.17
+#### Fix:
+Fix bug: Custom material missing when drag UI element in editor.  
+Fix bug: UITextInputComponent's composition input content not varified.  
+Fix bug: Render order error caused by nested LGUICanvas.  
+Fix bug: WorldSpaceLGUIRender sometimes not render in editor.  
+Fix bug: UIScrollViewComponentWithScrollbarComponent, flip horizontal scroll value.  
+#### Improvement:
+Improve prefab in level editor.  
+UILayout will not force change UIItem's anchor, unless the anchor is stretched.  
+Improve editor performance caused by LGUIManagerActor trying to draw helper frame on UI elements.  
+Allow multiple selection in PrefabEditor's viewport.  
+#### NewFeature:
+New overflow mode *HorizontalAndVerticalOverflow* for UIText, allow UIText to overflow horizontal until reach *MaxHorizontalWidth*, then overflow vertical.  
+New parameter *OverflowType* for UITextInput, allow UITextInput to set input rect size in range.  
+New parameter *KeepProgress* for UIScrollViewComponent, allow UIScrollView to keep progress value when size changed.  
+New parameter *ConstantSizeType* for UILayoutElement, allow it to use UIItem's size as constant size.  
+#### Change:
+Remove *GetIgnoreLayout* interface function for ILGUILayoutElementInterface.  
+
 ## 3.2.16
 #### Fix:
 Fix bug: UI not render when enable ODSC (On Demand Shader Compiler).  
