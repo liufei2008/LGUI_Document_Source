@@ -3,7 +3,7 @@ Usecase: use a UIItem to control a object location on world.
 
 The main point is to use two nodes: One is **Convert Position from LGUICanvas to Viewport**, which is proviced by LGUICanvasScaler:
 ![](1.png)
-|Property:|Functions:|
+|Property:|Function:|
 |:-|:-
 |Target|A reference to LGUICanvasScaler object.
 |Position|Input position in LGUICanvas's space. Note left bottom is zero position, so for UIItem who provide this value, should set *Anchors* to *Left Bottom*. 

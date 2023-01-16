@@ -3,7 +3,7 @@
 UIText can render UE4's text/string with LGUIFont.
 **Properties**
 ![](1.png)
-|Property:|Functions:|
+|Property:|Function:|
 |:-|:-|
 |Font|The Font used to display the text.|
 |Text|The text displayed by the control.|

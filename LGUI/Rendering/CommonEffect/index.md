@@ -12,7 +12,7 @@ Every UIEffect component have *Execute Order* property, this defines the effect 
 The Shadow component adds a simple outline effect to UIRenderable components such as UIText/UISprite/UITexture. It must be on a actor which have a UIRenderable component.
 ![](3.png)
 ![](4.png)
-|Property:|Functions:|
+|Property:|Function:|
 |:-|:-|
 |Shadow Color|The color of the shadow.
 |Multiply Source Alpha|Multiplies the alpha of the UIRenderable onto the alpha of the effect.
@@ -24,7 +24,7 @@ The Long Shadow component is like Shadow, but give us more control parameters, w
 ![](6.png)
 ![](7.png)
 ![](8.png)
-|Property:|Functions:|
+|Property:|Function:|
 |:-|:-|
 |Shadow Color|The begin color of the shadow.
 |Shadow Size|The offset of the shadow expressed as a vector.
@@ -37,7 +37,7 @@ The Long Shadow component is like Shadow, but give us more control parameters, w
 The Outline component adds a simple outline effect to UIRenderable components such as UIText/UISprite/UITexture. It must be on a actor which have a UIRenderable component.
 ![](9.png)
 ![](10.png)
-|Property:|Functions:|
+|Property:|Function:|
 |:-|:-|
 |Outline Color|The color of the outline.
 |Outline Size|The distance of the outline effect horizontally and vertically.
@@ -52,7 +52,7 @@ The Gradient Color component can change UIRenderable's color to 2 or four differ
 ![](12.png)
 ![](13.png)
 ![](14.png)
-|Property:|Functions:|
+|Property:|Function:|
 |:-|:-|
 |Direction Type|Gradient direction type, the options are *Bottom to Top* and *Top to Bottom" and "Left to Right" and "Right to Left" and "Four Cornor".
 |Multiply Source Alpha|Multiplies the alpha of the UIRenderable onto the alpha of the effect.

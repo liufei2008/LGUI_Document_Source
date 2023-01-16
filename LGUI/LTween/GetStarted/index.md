@@ -68,19 +68,22 @@ Click "New Loop Type" and you will find 4 options:
 
 Don't forget to set "New Loop Count", 0 or 1 means no loop, -1 means infinite loop, change these parameters and hit play.
 
-#### 4. Callback
-Callback function is also a can't-missing feature in tween animation.
-LTween provide these callbacks:  
+#### 4. Events
+Event function is also a can't-missing feature in tween animation.
+LTween provide these events:  
 **OnStart**- Execute when animation start (if have delay, then execute after delay)  
 **OnUpdate**- Execute every frame if is tweening  
 **OnComplete**- Execute when animation complete  
+**OnCycleStart**- Exeucte every cycle start when use loop  
 **OnCycleComplete**- Exeucte every cycle complete when use loop  
-Setup callback function is easy. eg OnComplete, drag out the "Return Value" and add new node "On Update", drag out "New Update" and add a custom event, the event will execute as you want:
+Setup event function is easy. eg OnComplete, drag out the "Return Value" and add new node "On Update", drag out "New Update" and add a custom event, the event will execute as you want:
 ![](step17.png)
 
 
 ## Functions
 **Pause/Resume**- Pause/Resume this animation  
+**Restart**- Restart animation  
+**Goto**- Send the tween to the given position in time  
 **Kill/KillIfIsTweening**- Kill the tween if the animation already start  
 **ForceComplete**- Force complete this animation at this frame, call OnComplete  
 

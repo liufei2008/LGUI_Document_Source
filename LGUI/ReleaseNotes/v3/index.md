@@ -1,3 +1,9 @@
+## 3.2.18
+#### NewFeature:
+New tweener type **LTweenerSequence** for LTween, allow us to control a group of sequence as a single tweener. Check [doc here](../../LTween/Sequence/index.md).  
+New function **Restart** for LTweener, allow us to restart a tween animation.  
+New function **Goto** for LTweener, allow us to send the tween animation to specific time position.  
+
 ## 3.2.17
 #### Fix:
 Fix bug: Custom material missing when drag UI element in editor.  

@@ -30,4 +30,10 @@
 <p>Some functions that LTween provide for your work</p>
 </div>
 
+<div class="frontpage-section">
+<a href="Sequence/index.md"><img src="Sequence/CreateSequence.jpg"></a>
+<h3><a href="Sequence/index.md">LTweenerSequence</a></h3>
+<p>Control a group of other tween animations as a single tween</p>
+</div>
+
 </div>

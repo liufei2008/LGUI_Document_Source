@@ -3,7 +3,7 @@ UIContainer is a actor wrapper of UIItem.
 
 #### 1. Transform related properties
 ![](1.png)
-|Property:|Functions:
+|Property:|Function:
 |:-|:-
 |Anchors|The anchor points for the lower left corner and the upper right corner of the rectangle.
 |Anchor Offset X/Y|X/Y position of the rectangle's pivot point relative to the anchors. The pivot point is the location around which the rectangle rotates. Not visible if anchor set to stretch or none.
@@ -16,7 +16,7 @@ UIContainer is a actor wrapper of UIItem.
 
 #### 2. Other properties
 ![](2.png)
-|Property:|Functions:
+|Property:|Function:
 |:-|:-
 |Is UI Active|Active ui is visible and interactable. If parent or parent's parent... IsUIActive is false, then this ui is not visible and not interactable.
 |Depth|Higher depth render on top of lower one, and receive raycast before lower one.

@@ -5,7 +5,7 @@ The main point is to use two nodes: One is **Project World to Screen**, which is
 ![](1.png)
 Another is **Convert Position from Viewport to LGUICanvas**, which is provided by LGUICanvasScaler:
 ![](2.png)
-|Property:|Functions:|
+|Property:|Function:|
 |:-|:-|
 |Target|A reference to LGUICanvasScaler object.
 |Position|Input position, which is output from **Project World to Screen** node. 

@@ -6,7 +6,7 @@ Select a UIText actor, add "UIEffectTextAnimation" component:
 
 #### 1. TextAnimation Component
 ![](2.png)
-|Property:|Functions:|
+|Property:|Function:|
 |:-|:-|
 |Selector|Selector defines the method to select characters in text.
 |Properties|Properties defines which property will affect and how it affect.
@@ -21,7 +21,7 @@ There are 3 types of Selector: Range, Random, RichTextTag.
 
 **Range** selector defines start and end range of characters in UIText, and provide 0 to 1 value(for interpolation) from start to end.
 ![](3.png)
-|Property:|Functions:|
+|Property:|Function:|
 |:-|:-|
 |Start|Start character position from 0 to 1, 0 is first character of text, 1 is last one.
 |End|End character position from 0 to 1, 0 is first character of text, 1 is last one.
@@ -31,7 +31,7 @@ There are 3 types of Selector: Range, Random, RichTextTag.
 
 **Random** selector will select characters randomly, and generate random value from 0 to 1 for interpolation.
 ![](4.png)
-|Property:|Functions:|
+|Property:|Function:|
 |:-|:-|
 |Seed|Random seed.
 |Start|Start character position from 0 to 1, 0 is first character of text, 1 is last one.
@@ -40,7 +40,7 @@ There are 3 types of Selector: Range, Random, RichTextTag.
   
 **RichTextTag** selector can select characters by rich-text custom-tag, and provide 0 to 1 value(for interpolation) from start to end.
 ![](5.png)
-|Property:|Functions:|
+|Property:|Function:|
 |:-|:-|
 |Range|Like the property in **Range** selector. Lower this value can let *Properties* effect more sharp.
 |Tag Name|Custom tag name
@@ -54,7 +54,7 @@ There are many types of Properties: Alpha, Color, Position, Rotation, Scale, Pos
 eg.  
 **Alpha** can change transparency of characters.
 ![](6.png)
-|Property:|Functions:|
+|Property:|Function:|
 |:-|:-|
 |Alpha|Target alpha value, 0-1 range.
 |Ease Type|Animation type, same as LTween ease.
@@ -62,7 +62,7 @@ eg.
 
 **ColorRandom** can generate random color.
 ![](7.png)
-|Property:|Functions:|
+|Property:|Function:|
 |:-|:-|
 |Seed|Random seed
 |Min|Random min
@@ -71,7 +71,7 @@ eg.
 
 **PositionWave** can use a sin function to generate wave effect for characters.
 ![](8.png)
-|Property:|Functions:|
+|Property:|Function:|
 |:-|:-|
 |Position|Max position value for sin wave. Sin function generate values from -1 to 1, so the result will be from -position to position.
 |Frequency|Higher frequency will generate smaller wavelength.

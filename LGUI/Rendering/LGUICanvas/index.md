@@ -6,7 +6,7 @@ UI elements in canvas are drawn by order of "Depth" property, which is a propert
 And there is a "Sort Order" property of LGUICanvas, "Sort Order" always have top priority then "Depth".
   
 ![](0.png)
-|Property:|Functions:|
+|Property:|Function:|
 |:-|:-|
 |Render Mode|The way UI is rendered. Options: *Screen Space Overlay* \| *World Space - UE Renderer* \| *World Space - LGUI Renderer* \| *Render Target*
 |Sort Order|This can affect draw order and raycast order of UI elements. Larger *Sort Order* will always draw on top of lower one, and larger one always receive raycast earlier then lower one.

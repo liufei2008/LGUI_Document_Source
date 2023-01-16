@@ -70,6 +70,8 @@
 
 ## [LTween functions](LTween/Functions/index.md)
 
+## [Sequence](LTween/Sequence/index.md)
+
 # ReleaseNotes
 
 ## [LGUI 2.x](ReleaseNotes/v2/index.md)
