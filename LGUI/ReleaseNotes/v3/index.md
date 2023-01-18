@@ -3,6 +3,14 @@
 New tweener type **LTweenerSequence** for LTween, allow us to control a group of sequence as a single tweener. Check [doc here](../../LTween/Sequence/index.md).  
 New function **Restart** for LTweener, allow us to restart a tween animation.  
 New function **Goto** for LTweener, allow us to send the tween animation to specific time position.  
+UISizeControlByAspectRatio and UISizeControlByOther now support animation.  
+New parameter *UseChildrenScaleOnWidth* for UIHorizontalLayout, allow the layout to calculate children's size with it's scale value. But since I can't get callback or event when object's scale value change, I can't automatically make the layout dirty and update it, so we need to call layout's *MarkNeedRebuildLayout* function mannually.  
+New parameter *UseChildrenScaleOnHeight* for UIVerticalLayout, same as UIHorizontalLayout.   
+#### Improvement:
+Add stop node for function *GetComponentInParent* *GetComponentInChildren* *GetComponentsInChildren*.  
+#### Fix:
+Fix bug: When turn on pixel-perfect mode, if UI object just change scale, then it will not render correctly.  
+Fix bug: Set nullptr for LTweener's callback function will crash.  
 
 ## 3.2.17
 #### Fix:
