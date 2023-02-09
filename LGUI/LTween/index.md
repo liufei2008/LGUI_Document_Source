@@ -1,6 +1,8 @@
 # Use LTween for tween animation
 ![](icon.png)
 
+Video tutorial: [bilibili](https://www.bilibili.com/video/BV1Ey4y1Q7tM/?share_source=copy_web&vd_source=b22254760c9a0522c8caea62e5327c1d) [youtube](https://youtu.be/m0-aYP8zRSw).
+
 ## Sections
 
 <hr>

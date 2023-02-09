@@ -1,3 +1,11 @@
+## 3.2.19
+#### NewFeature:
+New object type **LGUIRichTextImageData**, allow us to use it in UIText, and render image and emoji in UIText. Check video: [bilibili](https://www.bilibili.com/video/BV1J84y1G7r7/?share_source=copy_web&vd_source=b22254760c9a0522c8caea62e5327c1d) [youtube](https://youtu.be/442vQkATYbU).  
+#### Fix:
+Fix bug: UIRoundedLayout calculate wrong position.  
+Fix bug: LGUISDFFont could render with wrong size when first render a character.  
+Fix crash: Select a none UI object and drag prefab to level, then the editor crash.  
+
 ## 3.2.18
 #### NewFeature:
 New tweener type **LTweenerSequence** for LTween, allow us to control a group of sequence as a single tweener. Check [doc here](../../LTween/Sequence/index.md).  
