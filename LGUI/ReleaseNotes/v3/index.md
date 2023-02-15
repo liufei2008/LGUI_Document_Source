@@ -1,3 +1,11 @@
+## 3.2.20
+#### NewFeature:
+New parameter *RichTextTagFilterFlags* for UIText, allow us to switch on/off specific rich text tag.  
+#### Fix:
+Fix bug: UIRoundedLayout could cause update every frame.  
+Fix bug: LGUICanvas may create a lot of useless LGUIMeshComponent.  
+Fix bug: After delete LGUICanvas component from actor, child LGUICanvas not get new RootCanvas.  
+
 ## 3.2.19
 #### NewFeature:
 New object type **LGUIRichTextImageData**, allow us to use it in UIText, and render image and emoji in UIText. Check video: [bilibili](https://www.bilibili.com/video/BV1J84y1G7r7/?share_source=copy_web&vd_source=b22254760c9a0522c8caea62e5327c1d) [youtube](https://youtu.be/442vQkATYbU).  
