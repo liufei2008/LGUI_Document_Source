@@ -12,7 +12,7 @@
 
 ## [Interaction](GetStarted/Interaction/index.md)
 
-## [CreateButtonFromStratch](GetStarted/CreateButton/index.md)
+## [CreateButtonFromScratch](GetStarted/CreateButton/index.md)
 
 # [SampleProjects](SampleProjects/index.md)
 

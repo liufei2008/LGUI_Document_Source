@@ -1,3 +1,7 @@
+## 3.2.21
+#### Fix:
+Fix bug: UIText's rich text's begin tag disappear when turn off *RichTextTagFilterFlags*.  
+
 ## 3.2.20
 #### NewFeature:
 New parameter *RichTextTagFilterFlags* for UIText, allow us to switch on/off specific rich text tag.  
