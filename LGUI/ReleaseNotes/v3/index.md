@@ -1,3 +1,10 @@
+## 3.2.22
+#### Fix:
+Fix crash: Play StandaloneGame in editor will crash because of GEditor is nullptr.  
+Fix crash: When delete object in prefab editor, the prefab instance in level editor not clean up the object reference, and cause crash when create prefab next time.  
+Fix crash: Create sub prefab in prefab editor, if not apply immediately then the parent prefab will not linked with sub prefab.  
+Revert fix "WorldSpaceLGUIRender sometimes not render in editor", because it will make the render go unpredicatable (eg, newly created UI from prefab not render, change sprite and texture but still render old one).  
+
 ## 3.2.21
 #### Fix:
 Fix bug: UIText's rich text's begin tag disappear when turn off *RichTextTagFilterFlags*.  
