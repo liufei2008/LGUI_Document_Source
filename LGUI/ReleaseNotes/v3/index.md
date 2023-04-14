@@ -1,3 +1,32 @@
+## 3.3.0
+#### NewFeature:
+New parameter *AutoUpdate* for LGUIPrefab, so prefab in level editor can auto update to latest version.  
+LGUIPrefabSequence now support material parameter animation on *CustomUIMaterial*.  
+UIItem now can adjust anchor parameter inside viewport.  
+Add *Custom* type to *ELGUICanvasClipType* for LGUICanvas, so we can implement our type of clip.  
+New parameter *ReadOnly* for UITextInput, allow us to select and copy the text content and not editable it.  
+Add *Toggle Actors IsSpatiallyLoaded* function for *LGUI Editor Tools*, allow us to change *IsSpatiallyLoaded* property for selected actor and it's children. Only for UE5.  
+Add *VisiblePixel* type to *EUIRenderableRaycastType* for UIBaseRenderer, so our mouse can click on UI element with the ability of ignore transparent pixel.  
+New object type *LGUIStaticSpriteAtlasData* for static sprite atlas pack, support mipmap, support pixel hit test.  
+Add *Custom* type to *ELGUITextInputType* and new object type *UUITextInputCustomValidation* for UITextInput component, allow use to do custom validation. This is meant to replace the old *CustomFunction*.  
+Render mode of *RenderTarget* now can preview in editor.  
+#### Fix:
+Fix bug: When drag UIItem's anchor parameter, it will not immediately show the result.  
+Fix bug: When add "Transform" track in LGUIPrefabSequence, the target's transform is reset to identity.  
+Fix bug: Prefab in LevelEditor can't apply or revert property of object reference type.  
+Fix bug: Can not replace object class by *LGUI Editor Tools*.  
+Fix bug: *BlendDepth* not work in *WorldSpaceLGUIRenderer* mode with *Forward Shader* turn on.  
+Fix bug: Change render mode to *WorldSpaceLGUIRenderer* in PrefabEditor not work.  
+Fix bug: Render mode of *RenderTarget* color is wrong.  
+Fix crash: Remove UIFlexibleGridLayoutElement cause crash.  
+#### Change:
+Remove some old LGUI2.x parameter, and *Convert from LGUI2.x to LGUI3.x* functions.  
+Change LGUISDFFontData as LGUI's built-in feature, it was inside a seperate module before.  
+LGUISceneOutlinerInfoColumn change name from "LGUIInfo" to "LGUI" in UE5.  
+Rename LGUIAtlasData to LGUIDynamicSpriteAtlasData.  
+Remove *PackingTag* property on Font.  
+Cleanup, rename, combine some LGUI's built-in material assets, so some one could get *Failed to load '/LGUI/LGUI_Standard'* -like error, no worry because LGUI will find the object.  
+
 ## 3.2.22
 #### Fix:
 Fix crash: Play StandaloneGame in editor will crash because of GEditor is nullptr.  
@@ -124,7 +153,7 @@ Fix bug: UITextInput's details panel have wrong order with navigation parameters
 Fix bug: UITextInput can copy or cut password.  
 Fix bug: If set LGUIComponentReference in code, then we can't get value from it.  
 #### Change:
-When turn off *PreserveHierarhyState* in LGUI-Tools menu, LGUIEditorLevelDataStorageActor will also be deleted.  
+When turn off *PreserveHierarhyState* in *LGUI Editor Tools* menu, LGUIEditorLevelDataStorageActor will also be deleted.  
 InputChangeDelegate move from LGUIPointerInputModule to LGUIEventSystem.  
 #### Improvement:
 Optimize LGUIPrefab's thumbnail, size property will also take effect on thumbnail.  
@@ -257,7 +286,7 @@ Optimize data passed from game-thread to render-thread, mesh update become more 
 
 ## 3.1.9
 #### NewFeature:
-ScreenSpaceUI can draw selection helper frame, with a toggle box in *LGUI Tools* menu.  
+ScreenSpaceUI can draw selection helper frame, with a toggle box in *LGUI Editor Tools* menu.  
 Mobile can use external joystick input, just like standalone platform.  
 Add visualization arrow for UISelectable navigation.  
 #### Fix:
