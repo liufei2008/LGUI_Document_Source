@@ -1,14 +1,29 @@
+## 3.3.1
+#### NewFeature:
+UITextInputComponent now support *RichText*, so we can something like emoji input in text message.  
+New parameter *FaceIndex* for LGUIPointerEventData, represent line-trace-hit face on static mesh in world space.  
+#### Improvement:
+UISpriteSheetTexturePlayer and UISpriteSequencePlayer now can preview in editor.  
+#### Fix:
+Crash: When there are multiple prefab instance in level editor, and one of them is referencing actor which is not belongs to the prefab, crash.  
+Bug: UISelectable->FindDefaultSelectable can cause infinite loop.  
+Bug: LGUIRenderTargetGeometrySource can't receive input event, because wrong collision data.  
+Bug: Add layout component in editor not update layour immediately.  
+Bug: With *PixelPerfect* is on, and scale UI element, the UI element's bounds calculation will go wrong, can cause wrong drawcall batch.  
+Bug: Add Layout component in editor but not apply the layout effect immediately.  
+Crash: When prefab system want to serialize or duplicate a actor, if the actor is a transient one, then crash.  
+
 ## 3.3.0
 #### NewFeature:
 New parameter *AutoUpdate* for LGUIPrefab, so prefab in level editor can auto update to latest version.  
 LGUIPrefabSequence now support material parameter animation on *CustomUIMaterial*.  
 UIItem now can adjust anchor parameter inside viewport.  
-Add *Custom* type to *ELGUICanvasClipType* for LGUICanvas, so we can implement our type of clip.  
-New parameter *ReadOnly* for UITextInput, allow us to select and copy the text content and not editable it.  
+Add *Custom* type to *ELGUICanvasClipType* for LGUICanvas, so we can implement our own type of clip.  
+New parameter *ReadOnly* for UITextInput, allow us to select and copy the text content and not edit on it.  
 Add *Toggle Actors IsSpatiallyLoaded* function for *LGUI Editor Tools*, allow us to change *IsSpatiallyLoaded* property for selected actor and it's children. Only for UE5.  
 Add *VisiblePixel* type to *EUIRenderableRaycastType* for UIBaseRenderer, so our mouse can click on UI element with the ability of ignore transparent pixel.  
 New object type *LGUIStaticSpriteAtlasData* for static sprite atlas pack, support mipmap, support pixel hit test.  
-Add *Custom* type to *ELGUITextInputType* and new object type *UUITextInputCustomValidation* for UITextInput component, allow use to do custom validation. This is meant to replace the old *CustomFunction*.  
+Add *Custom* type to *ELGUITextInputType* and new object type *UUITextInputCustomValidation* for UITextInput component, allow us to do custom validation. This is meant to replace the old *CustomFunction*.  
 Render mode of *RenderTarget* now can preview in editor.  
 #### Fix:
 Fix bug: When drag UIItem's anchor parameter, it will not immediately show the result.  
