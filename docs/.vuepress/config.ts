@@ -1,0 +1,184 @@
+import { defaultTheme } from "vuepress";
+
+export default {
+    locales: {
+        '/': {
+            lang: 'en-US',
+        },
+        "/zh-cn/": {
+            lang: '中文',
+        }
+    },
+    base: "/LGUIDoc/",
+    dest: "$(sourceDir)/../../liufei2008.github.io/LGUIDoc",
+    theme: defaultTheme({
+        locales: {
+            '/':
+            {
+                colorModeSwitch: true,
+                selectLanguageText: 'Languages',
+                selectLanguageName: 'English',
+                selectLanguageAriaLabel: 'Languages',
+                editLink: true,
+                editLinkText: 'Edit this page on Github',
+                logo: "logo.png",
+                navbar: [
+                    { text: "Home", link: '/' },
+                ],
+                sidebar: [
+                    {
+                        text: 'Get Started',
+                        collapsible: true,
+                        children: [
+                            '/GetStarted/Install/',
+                            '/GetStarted/HelloWorld/',
+                            '/GetStarted/CustomButton/',
+                            '/GetStarted/Font/',
+                            '/GetStarted/Prefab/',
+                            '/GetStarted/Interaction/',
+                            '/GetStarted/CreateButton/',
+                        ]
+                    },
+                    {
+                        text: 'Sample Projects',
+                        collapsible: true,
+                        children: [
+                            '/SampleProjects/'
+                        ]
+                    },
+                    {
+                        text: 'Prefab Workflow',
+                        collapsible: true,
+                        children: [
+                            '/PrefabWorkflow/PrefabEditor/',
+                            '/PrefabWorkflow/LGUILifeCycleBehaviour/',
+                            // '/PrefabWorkflow/Prefab/',
+                        ]
+                    },
+                    {
+                        text: 'Rendering',
+                        collapsible: true,
+                        children: [
+                            '/Rendering/LGUICanvas/',
+                            '/Rendering/ScreenSpaceUI/',
+                            '/Rendering/WorldSpaceUERenderer/',
+                            '/Rendering/WorldSpaceLGUIRenderer/',
+                            '/Rendering/LGUIRenderFlow/',
+                            '/Rendering/UICanvasGroup/',
+                        ]
+                    },
+                    {
+                        text: "Visual Components",
+                        collapsible: true,
+                        children: [
+                            // '/Rendering/UISprite/',
+                            // '/Rendering/UITexture/',
+                            '/VisualComponents/UIText/',
+                            // '/Rendering/UIExtensionElements/',
+                            '/VisualComponents/UIEffect/',
+                            '/VisualComponents/TextAnimation/',
+                            '/VisualComponents/UIBackgroundBlur/',
+                            '/VisualComponents/UIBackgroundPixelate/',
+                        ]
+                    },
+                    {
+                        text: 'Events',
+                        collapsible: true,
+                        children: [
+                            '/Events/LGUIEventDelegate/',
+                            '/Events/LGUIEventSystem/',
+                        ]
+                    },
+                    {
+                        text: 'Interaction Components',
+                        collapsible: true,
+                        children: [
+                            '/InteractionComponents/UISelectable/'
+                        ]
+                    },
+                    {
+                        text: 'Layout',
+                        collapsible: true,
+                        children: [
+                            '/Layout/UIItem/',
+                            '/Layout/AutoLayout/',
+                        ]
+                    },
+                    {
+                        text: 'Tween Animation',
+                        collapsible: true,
+                        children: [
+                            '/LTween/GetStarted/',
+                            '/LTween/LGUI/',
+                            '/LTween/Custom/',
+                            '/LTween/Functions/',
+                            '/LTween/Sequence/',
+                        ]
+                    },
+                    {
+                        text: 'Performance',
+                        collapsible: true,
+                        children: [
+                            '/Performance/'
+                        ]
+                    },
+                    {
+                        text: 'ReleaseNotes',
+                        collapsible: true,
+                        children: [
+                            '/ReleaseNotes/v3/',
+                            '/ReleaseNotes/v2/',
+                        ]
+                    },
+                    {
+                        text: 'FAQ',
+                        collapsible: true,
+                        children: [
+                            '/FAQ/UpdateTo3/',
+                            '/FAQ/ProjectWorldToScreen/',
+                            '/FAQ/DeprojectScreenToWorld/',
+                            '/FAQ/CustomMaterial/',
+                            '/FAQ/DisableInteractionComponent/',
+                            '/FAQ/FindChildByDisplayName/',
+                            '/FAQ/GetActorInsidePrefab/',
+                            '/FAQ/Antialiasing/',
+                        ]
+                    }
+                ]
+            },
+            '/zh-cn/':
+            {
+                selectLanguageText: '选择语言',
+                selectLanguageName: '中文',
+                selectLanguageAriaLabel: 'Languages',
+                editLinkText: '在Github上编辑此页面',
+                logo: "Icon.png",
+                navbar: [
+                    { text: "主页", link: '/zh-cn/' },
+                ],
+                sidebar: [
+                    {
+                        text: '起步',
+                        collapsible: true,
+                        children: [
+                            '/zh-cn/GetStarted/Install/',
+                            '/zh-cn/GetStarted/HelloWorld/',
+                            '/zh-cn/GetStarted/CustomButton/',
+                            '/zh-cn/GetStarted/Font/',
+                            '/zh-cn/GetStarted/Prefab/',
+                            '/zh-cn/GetStarted/Interaction/',
+                            '/zh-cn/GetStarted/CreateButton/',
+                        ]
+                    },
+                    {
+                        text: '样例工程',
+                        collapsible: true,
+                        children: [
+                            '/zh-cn/SampleProjects/'
+                        ]
+                    }
+                ]
+            }
+        },
+    }),
+}
