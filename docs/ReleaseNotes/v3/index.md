@@ -6,6 +6,22 @@ sidebarDepth: 4
 
 ## 3.3
 
+### 3.3.3
+#### NewFeature:
+New UI element type **UIProceduralRect**, allow us to create procedural rect shape without any texture. Check video: [Bilibili](https://www.bilibili.com/video/BV168411D784/) [Youtube](https://youtu.be/d_qbTcnOxxA)  
+#### Change:
+Blueprint's variable will only serialize in prefab if *InstanceEditable* is checked.  
+Change most UObject variable pointer to TObjectPtr.  
+#### Fix:
+Crash: PrefabEditor crash because invalid UObject in "AddOneShotTickFunction".  
+Crash: Load prefab in OpenWorld.  
+Crash: Override parameter in sub-prefab but the parameter not exist anymore (change name or removed).  
+Bug: LGUIPrefabSequence is playing at twice the speed.  
+Bug: Wrong lookat and orbit point in PrefabEditor.  
+Bug: Apply or revert override parameter on prefab, but not executing PostConstructionScript.  
+Bug: LTweenVector4Getter/Setter use Vector3 as parameter.  
+Bug: UIScrollViewWithScrollbar, when *ScrollbarVisibility* is *Permanent*, Scrollbar not auto adjust size when content size change.  
+
 ### 3.3.2
 #### NewFeature:
 New rich-text style mode **LGUIRichTextCustomStyleData**, allow us to create custom style within sigle tag.  

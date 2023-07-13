@@ -48,4 +48,4 @@ Drag out "Return Value" from "Find Child by Display Name" node and cast it to "U
 ![](./12.png)
 
 The "As UIText" is the object you need.
-**NOTE** "FindChildByDisplayName" can only work with LGUI's UI element.  
+**NOTE** "FindChildByDisplayName" can only work with LGUI's UI element, because other type of actor don't have persistent "DisplayName".    
