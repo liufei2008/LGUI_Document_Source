@@ -6,6 +6,16 @@ sidebarDepth: 4
 
 ## 3.3
 
+### 3.3.4
+#### NewFeature:
+New custom clip object LGUICanvasCustomClip_RoundedRect, allow us to clip by rectangle with rounded corner, just like UIProceduralRect.  
+UIProceduralRect now support sprite as body's texture, this can give us better control on drawall.  
+UIProceduralRect now support rounded corner raycast.
+#### Change:
+UIProceduralRect adjust inner-shader and outer-shadow's angle parameter to fit photoshop's.  
+#### Fix:
+Bug: Material error in UE5.0.  
+
 ### 3.3.3
 #### NewFeature:
 New UI element type **UIProceduralRect**, allow us to create procedural rect shape without any texture. Check video: [Bilibili](https://www.bilibili.com/video/BV168411D784/) [Youtube](https://youtu.be/d_qbTcnOxxA)  
