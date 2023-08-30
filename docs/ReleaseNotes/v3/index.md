@@ -6,6 +6,28 @@ sidebarDepth: 4
 
 ## 3.3
 
+### 3.3.5
+#### NewFeature:
+Add *ControlChildWidth* and *ControlChildHeight* property for UIHorizontalLayout and UIVerticalLayout.  
+#### Fix:
+Crash: When CurveEditor is opened and then close PrefabEditor, this will crash editor.  
+Crash: Prefab trying to serialize transient actor.  
+Bug: SDF font not display in UE5.2 on platform android with vulkan backend.  
+Bug: UIProceduralRect when *RadialFill* angle is 360, there is a thin line remained.  
+Bug: UIProceduralRect when *BorderWidth* is 0, there is a thin line rect remained.  
+Bug: UIProceduralRect when *SoftEdge* is checked, mesh is not updated correctly.  
+Bug: UIVerticalLayout calculate *WidthFitToChildren* wrong.  
+Bug: UE5.2 prefab editor cannot select or multi select actor after select a component.  
+Bug: If use prefab editor, when close UE editor, the UE editor will crash because subsystem nullptr.  
+Bug: If enable *PreserveHierarchyState* in UE5.1 and UE5.2, editor will crash when save new level.  
+#### Change:
+Add DEPRECATED_MACRO for LTween's modifications in version 3.3.4.  
+When do LGUI's base setup (Create screen space or world space UI root), LGUI will check trace channel, and will give a hint if there is no valid trace channel for LGUI.  
+Add a simple *VirtualCall* function for LTweenBPLibrary.  
+Change some enum's name with prefix "E".  
+Rename LGUIIndexType to LGUIMeshIndexBufferType.  
+Skip *EditorOnly* actor and object.  
+
 ### 3.3.4
 #### NewFeature:
 New custom clip object LGUICanvasCustomClip_RoundedRect, allow us to clip by rectangle with rounded corner, just like UIProceduralRect.  
@@ -15,6 +37,7 @@ UIProceduralRect now support rounded corner raycast.
 UIProceduralRect adjust inner-shader and outer-shadow's angle parameter to fit photoshop's.  
 #### Fix:
 Bug: Material error in UE5.0.  
+Bug: ScreenSpaceUI verticle flipped on platform android with gles backend.  
 
 ### 3.3.3
 #### NewFeature:
