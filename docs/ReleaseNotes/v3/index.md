@@ -6,20 +6,31 @@ sidebarDepth: 4
 
 ## 3.3
 
+### 3.3.6
+#### NewFeature:
+Add *EndCapSizeAffectByLineWidth* property for UI2DLineRendererBase, so cap size can scale with *LineWidth*.  
+#### Fix:
+Bug: LGUI_StandaloneInputModule.OverrideMousePosition not working.  
+Bug: SDFFont appear blurry when scale up UIText.  
+Bug: Memory leak caused by LGUIMeshElementCollector when use LGUI-Renderer, UE5.1 and above.  
+Crash: When add UIButton (or other components that need to use ALGUIManagerActor::GetInstance function) to a Blueprint, the editor will crash.  
+#### Change:
+Rename LGUIEventDelegateParameterType to ELGUIEventDelegateParameterType.  
+
 ### 3.3.5
 #### NewFeature:
 Add *ControlChildWidth* and *ControlChildHeight* property for UIHorizontalLayout and UIVerticalLayout.  
 #### Fix:
 Crash: When CurveEditor is opened and then close PrefabEditor, this will crash editor.  
 Crash: Prefab trying to serialize transient actor.  
+Crash: If use prefab editor, when close UE editor, the UE editor will crash because subsystem nullptr.  
+Crash: If enable *PreserveHierarchyState* in UE5.1 and UE5.2, editor will crash when save new level.  
 Bug: SDF font not display in UE5.2 on platform android with vulkan backend.  
 Bug: UIProceduralRect when *RadialFill* angle is 360, there is a thin line remained.  
 Bug: UIProceduralRect when *BorderWidth* is 0, there is a thin line rect remained.  
 Bug: UIProceduralRect when *SoftEdge* is checked, mesh is not updated correctly.  
 Bug: UIVerticalLayout calculate *WidthFitToChildren* wrong.  
 Bug: UE5.2 prefab editor cannot select or multi select actor after select a component.  
-Bug: If use prefab editor, when close UE editor, the UE editor will crash because subsystem nullptr.  
-Bug: If enable *PreserveHierarchyState* in UE5.1 and UE5.2, editor will crash when save new level.  
 #### Change:
 Add DEPRECATED_MACRO for LTween's modifications in version 3.3.4.  
 When do LGUI's base setup (Create screen space or world space UI root), LGUI will check trace channel, and will give a hint if there is no valid trace channel for LGUI.  
