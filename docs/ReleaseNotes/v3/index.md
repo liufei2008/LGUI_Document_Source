@@ -4,6 +4,19 @@ sidebarDepth: 4
 
 # LGUI 3.x
 
+## 3.4
+
+### 3.4.0
+#### NewFeature:
+LGUIPrefab now support common actor (none-UI actor) workflow.  
+New ILGUIPrefabInterface for LGUIPrefab, so any Actor or ActorComponent can have Awake event when use with LGUIPrefab.  
+New *Custom* mode for *UIScaleMode*, so we can use a custom LGUICanvasScalerCustomScale object to control the ScreenSpaceUI scale behaviour to fit our screen.  
+#### Improvement:
+World-Space-LGUI-Renderer can automatic sort render order depend on pivot point distance to camera.  
+World-Space-LGUI-Renderer and Screen-Space-Overlay now support view frustum culling to optimize rendering performance.  
+#### Change:
+LGUI Rendering framework change.  
+
 ## 3.3
 
 ### 3.3.6
