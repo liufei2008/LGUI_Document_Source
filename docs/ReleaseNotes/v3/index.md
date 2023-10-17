@@ -6,6 +6,12 @@ sidebarDepth: 4
 
 ## 3.4
 
+### 3.4.1
+#### Fix:
+Crash: Potential crash because access UObject in render thread.  
+Bug: GetComponentInChildren wrong implementation.  
+Bug: If an ActorBlueprint exist inside a LGUIPrefab then cook fail.  
+
 ### 3.4.0
 #### NewFeature:
 LGUIPrefab now support common actor (none-UI actor) workflow.  
