@@ -50,9 +50,10 @@ export default {
                         text: 'Prefab Workflow',
                         collapsible: true,
                         children: [
+                            '/PrefabWorkflow/Prefab/',
                             '/PrefabWorkflow/PrefabEditor/',
                             '/PrefabWorkflow/LGUILifeCycleBehaviour/',
-                            // '/PrefabWorkflow/Prefab/',
+                            '/PrefabWorkflow/LGUIPrefabInterface/',
                         ]
                     },
                     {
