@@ -18,6 +18,7 @@ Awake/Start/OnDestroy can be executed only once in the whole life cycle, and OnE
 GetIsActiveAndEnable: Returns true when IsUIActive of UIItem is true and enable of LGUILifeCycleBehaviour is true.  
 
 Execute order with the UnrealEngine's built-in life cycle function: BeginPlay -> Awake ... OnDestroy -> EndPlay, the Tick function has nothing to do with the Update function.  
+Awake execute order in prefab: Higher in hierarchy will execute earlier, so scripts on root actor will execute the first, and scripts on lowest actor will execute the last.  
 
 ### Other functions
 **GetRootSceneComponent**: Shotcut and cache for GetOwner->GetRootComponent.  

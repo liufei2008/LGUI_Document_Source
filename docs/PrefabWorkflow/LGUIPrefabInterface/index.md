@@ -8,4 +8,4 @@ Then two functions will appear on "Interfaces" area:
 ![](./2.png)
 
 **NOTE!!!**
-Awake execute order in prefab: deeper and lower in hierarchy will execute earlier, so scripts on root actor will execute latest. Actor execute first, then execute on component. And this Awake is execute later than LGUILifeCycleBehaviour's Awake when in same prefab.
+Awake execute order in prefab: Higher in hierarchy will execute earlier, so scripts on root actor will execute the first, and scripts on lowest actor will execute the last. Actor execute first, then execute on component. And this Awake is execute later than all LGUILifeCycleBehaviour's Awake when in same prefab.  

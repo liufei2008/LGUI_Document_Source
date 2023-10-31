@@ -6,6 +6,25 @@ sidebarDepth: 4
 
 ## 3.4
 
+### 3.4.3
+#### Fix:
+Crash: LGUIEventDelegate and LGUIComponentReference cause crash when compile blueprint.  
+Bug: Nested prefab could missing override parameters in a specific case, check the description of ELGUIPrefabVersion::NewObjectOnNestedPrefab in ULGUIPrefab.h.  
+Bug: When replace a UI element, children of it could get wrong position and hierachy index.  
+Bug: Wrong hierarchy index when create new UI element.  
+#### Change:
+Change ULTweenerSequence to BlueprintType, or the AngelScript version will not export the functions of it.  
+Rename LGUIPrefabManagerActor to LGUIPrefabLevelManagerActor, because it was meant to manage prefabs in a level.  
+**CAUTION** Script execution order change, LGUILifeCycleBehaviour and ILGUIPrefabInterface in prefab will execute with order just like unity does: Higher in hierarchy will execute earlier, so scripts on root actor will execute the first, and scripts on lowest actor will execute the last.  
+
+### 3.4.2
+#### NewFeature:
+LGUIPrefab now can attach new actor to sub-prefab! This is a big leap, because we can achieve almost the same workflow just like Unity's Prefab.  
+Optimize LGUI's object creation menu, now more like engine's PlaceActor menu.  
+#### Fix:
+Bug: ScreenSpaceUIRoot as Prefab, when open it in PrefabEditor, root UIItem's size become 2x2.  
+Bug: In PrefabEditor, when use *ApplyAll* and *RevertAll* on override properties, the transform property did not get correct value.  
+
 ### 3.4.1
 #### Fix:
 Crash: Potential crash because access UObject in render thread.  
