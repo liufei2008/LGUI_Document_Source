@@ -6,6 +6,29 @@ sidebarDepth: 4
 
 ## 3.4
 
+### 3.4.4
+#### NewFeature:
+New UI element type **UIWidget** which can render UMG in LGUI! And **UIWidgetInteraction** component for interact with it!  
+New UI element type **UIRenderTarget** which can show LGUICanvas with RenderMode of RenderTarget! And support interact by LGUIRenderTargetInteraction component. We can use it like a *Retainer Box*.  
+New UI element type **UIFrameCapture** which can capture viewport as texture for further use.  
+Unique entry for creating LGUIPrefab of common actor.  
+UI hierarchy can break parent-children link, if we put a none-UI actor between them, so we can attach UI in same hierarchy with even different RenderMode.  
+#### Change:
+When revert or apply property with prefab, if the object is UI, then AnchorData and RelativeLocation will revert or apply together.  
+#### Fix:
+Crash: Add LGUICanvas component then undo & redo will crash editor.  
+Crash: Delete actor which have a sub-prefab attached to it.  
+Bug: Can't paste or duplicate actors in sub-prefab.  
+Bug: LGUILifeCycleBehaviour call SetEnable in Awake show error log.  
+Bug: Drawcall batching wrong caused by overlap calculate wrong.  
+Bug: LGUILifeCycleBehaviour's *ExecuteInEditMode* not working.  
+Bug: LoadPrefab with nested Prefab may get wrong size of UI element.  
+Bug: UI element may not render dure to wrong bounds calculation.  
+Bug: Delete root actor of sub-prefab with engine builtin delete method, but the sub-prefab's objects is still reference by prefab system.  
+Bug: Sub-Prefab's override parameter can't record sub-object's parameter.  
+Bug: LGUIPlayTween and LGUIPlayTweenSequence *PlayOnStart* not working if load from prefab.  
+Bug: LGUICanvas's rect-clip not update in nested canvas.  
+
 ### 3.4.3
 #### Fix:
 Crash: LGUIEventDelegate and LGUIComponentReference cause crash when compile blueprint.  
