@@ -6,6 +6,18 @@ sidebarDepth: 4
 
 ## 3.4
 
+### 3.4.6
+#### Fix:
+Bug: UICustomMesh not render from version 3.4.5.  
+Crash: When a UI element use Custom RaycastType and has a valid CustomRaycastObject, then reset CustomRaycastObject then reset RaycastType.  
+
+### 3.4.5
+#### NewFeature:
+New callback function/event when LoadPrefab.  
+New material function node LGUISwitchClipType for easily set clip.  
+#### Fix:
+Bug: UIDirectMeshRenderable not support LGUICanvas's clip, now fixed and tested in LGUI_ParticleSystem.  
+
 ### 3.4.4
 #### NewFeature:
 New UI element type **UIWidget** which can render UMG in LGUI! And **UIWidgetInteraction** component for interact with it!  
