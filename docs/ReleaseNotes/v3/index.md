@@ -6,6 +6,11 @@ sidebarDepth: 4
 
 ## 3.4
 
+### 3.4.7
+#### Fix:
+Bug: UISprite's Tiled mode not correct in edit mode.  
+Bug: Copy & Paste AnchorData in LGUI-Transform, but the property is not tracked in sub-prefab's override properties.  
+
 ### 3.4.6
 #### Fix:
 Bug: UICustomMesh not render from version 3.4.5.  

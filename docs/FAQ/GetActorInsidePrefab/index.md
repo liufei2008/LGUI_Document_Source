@@ -8,7 +8,7 @@ We create a UI prefab with name "TestPrefab", inside the prefab should be like t
 If we want to modify "Text" object, how to get a reference of it?
 There are two ways to do it, lets do it step by step.
 
-First we should load it with a ActorComponent, so create a ActorComponent with name "PrefabLoader", then link "LoadPrefab" node to "BeginPlay", and assign our prefab "TestPrefab" to it, this means prefab will be loaded when hit play:  
+First we should load the prefab, so create a ActorComponent with name "PrefabLoader", then link "LoadPrefab" node to "BeginPlay", and assign our prefab "TestPrefab" to it, this means prefab will be loaded when hit play:  
 ![](./2.png)
 
 ## Use ActorComponent as mediator
@@ -19,7 +19,7 @@ Create another ActorComponent, this time we use LGUILifeCycleBehaviour as base c
 Add a variable with type "UITextActor", name "Text", and check on "Instance Editable":  
 ![](./4.png)
 
-Open "TestPrefab" and drag "Mediator" to "Root" actor:  
+Open "TestPrefab" and drag "Mediator" to "Root" actor's component stack:  
 ![](./5.png)
 
 Select "Mediator" component on "Root" actor, check on the lock button on "Details" panel, then drag "Text" actor to the variable "Text":  
@@ -48,4 +48,4 @@ Drag out "Return Value" from "Find Child by Display Name" node and cast it to "U
 ![](./12.png)
 
 The "As UIText" is the object you need.
-**NOTE** "FindChildByDisplayName" can only work with LGUI's UI element, because other type of actor don't have persistent "DisplayName".    
+**NOTE** "FindChildByDisplayName" can only work with LGUI's UI element, because other type of actor don't have persistent "DisplayName". You can find details in [this](../FindChildByDisplayName).  

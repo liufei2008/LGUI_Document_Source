@@ -135,6 +135,7 @@ export default {
                         text: 'FAQ',
                         collapsible: true,
                         children: [
+                            '/FAQ/WhyPrefab/',
                             '/FAQ/UpdateTo3/',
                             '/FAQ/ProjectWorldToScreen/',
                             '/FAQ/DeprojectScreenToWorld/',
@@ -176,6 +177,21 @@ export default {
                         collapsible: true,
                         children: [
                             '/zh-cn/SampleProjects/'
+                        ]
+                    },
+                    {
+                        text: '常见问题',
+                        collapsible: true,
+                        children: [
+                            '/zh-cn/FAQ/WhyPrefab/',
+                            // '/FAQ/UpdateTo3/',
+                            '/zh-cn/FAQ/ProjectWorldToScreen/',
+                            '/zh-cn/FAQ/DeprojectScreenToWorld/',
+                            // '/FAQ/CustomMaterial/',
+                            // '/FAQ/DisableInteractionComponent/',
+                            '/zh-cn/FAQ/FindChildByDisplayName/',
+                            '/zh-cn/FAQ/GetActorInsidePrefab/',
+                            '/zh-cn/FAQ/Antialiasing/',
                         ]
                     }
                 ]

@@ -6,8 +6,8 @@ The main point is to use two nodes: One is **Convert Position from LGUICanvas to
 |Property:|Function:|
 |:-|:-
 |Target|A reference to LGUICanvasScaler object.
-|Position|Input position in LGUICanvas's space. Note left bottom is zero position, so for UIItem who provide this value, should set *Anchors* to *Left Bottom*, and the parent of UIItem should set to full screen size.
-|Return Value|Result screen space position, left top is zero position. Note left bottom is zero position.
+|Position|Input position in LGUI's screen space. Note left bottom is zero position, so for UIItem who provide this value, should set *Anchors* to *Left Bottom*, and the parent of UIItem should set to full screen size.
+|Return Value|Result screen space position, note left top is zero position.
 
 Another is **Deproject Screen to World**, which is UnrealEngine's default node:  
 ![](./2.png)  

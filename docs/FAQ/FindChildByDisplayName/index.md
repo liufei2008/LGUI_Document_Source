@@ -11,5 +11,5 @@ UE4's actor don't have a persistent name, the name displayed in *World Outliner*
 |Find Child Array by Display Name (In Name)|Like "FindChildByDisplayName", but return all children that match the case.
 
 #### 3. Change UIItem's DisplayName
-Like descripted before, UIItem's *DisplayName* the same as actor's label displayed in *World Outliner*, so just change the actor label in editor.  
+Like descripted before, UIItem's *DisplayName* is the same as actor's label displayed in *World Outliner*, so just change the actor label in editor.  
 And in runtime, call function *SetDisplayName* to change it.
