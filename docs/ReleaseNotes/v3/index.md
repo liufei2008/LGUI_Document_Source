@@ -6,6 +6,12 @@ sidebarDepth: 4
 
 ## 3.4
 
+### 3.4.8
+#### Fix:
+Bug: Collision in prefab not working after package.  
+#### Change:
+Add tip text for LGUIEventDelegate, eg not support multi-edit, not support ActorBlueprint's component.  
+
 ### 3.4.7
 #### Fix:
 Bug: UISprite's Tiled mode not correct in edit mode.  
