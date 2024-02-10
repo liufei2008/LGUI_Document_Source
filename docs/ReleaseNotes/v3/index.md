@@ -6,6 +6,34 @@ sidebarDepth: 4
 
 ## 3.4
 
+### 3.4.11
+#### NewFeature:
+Add *NavigationChangeInterval* property for UISlider and UIScrollbar, so we can set the interval-value when change by NavigationInput.  
+#### Change:
+NavigationInput will skip invisible items (when item's center point is clipped by LGUICanvas).  
+Improve SDF font, change default *FontSize* to 64, change *SDFRadius* to automatic.  
+Add more check for LTween to prevent crash.  
+#### Fix:
+Bug: When LGUICanvas enable *DynamicPixelsPerUnit*, SDF font text can't set big size.  
+Bug: LGUICanvasScaler sometimes scale root canvas's size as material editor's size.  
+Bug: RenderTarget mode in LGUICanvas render nothing when there exist a SceneCapture2D.  
+
+### 3.4.10
+#### NewFeature:
+Add UMG tween functions for LTweenBPLibrary, [doc here](https://liufei2008.github.io/LTweenDoc/UMG/).  
+Add "DoubleTo" function node for LTweenBPLibrary.  
+UIRecyclableScrollView now support infinite loop, just check on *InfiniteLoop*.  
+Add *RestrictArea* property for UIScrollView, if uncheck it then "Content" will not be limited inside rect range, means not move back when it out-of-range.  
+#### Change:
+LocalPositionXTo now use double precision float, same as other similar functions.  
+#### Fix:
+Crash: In UIScrollViewWithScrollbar, if we both check Horizontal and Vertical but without a valid VerticalScrollbar, then crash.  
+
+### 3.4.9
+#### Fix:
+Bug: Preserve hierarchy state not work in engine version 5.3 (auto unexpand actor).  
+Crash: LGUIBPLibrary::LoadPrefab with null prefab.  
+
 ### 3.4.8
 #### Fix:
 Bug: Collision in prefab not working after package.  
