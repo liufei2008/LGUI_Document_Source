@@ -109,11 +109,8 @@ export default {
                         text: 'Tween Animation',
                         collapsible: true,
                         children: [
-                            '/LTween/GetStarted/',
+                            '/LTween/Document/',
                             '/LTween/LGUI/',
-                            '/LTween/Custom/',
-                            '/LTween/Functions/',
-                            '/LTween/Sequence/',
                         ]
                     },
                     {
