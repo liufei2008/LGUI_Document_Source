@@ -6,6 +6,18 @@ sidebarDepth: 4
 
 ## 3.4
 
+### 3.4.12
+#### NewFeature:
+Support Multisample Anti-Aliasing (MSAA) in LGUIRenderer (ScreenSpace, WorldSpaceLGUIRenderer, RenderTarget), just enable it in ProjectSettings->LGUI. Support on Windows(DX11 & DX12) and Android(Vulkan) and MacOS, IOS not tested.  
+Support Substrate material mode in UE5.3.  
+#### Improvement:
+SDF font rendering: Reduce texture aliasing when viewed from an oblique angle.  
+Improve *DepthFade* rendering effect, *DepthFade* is a prameter on LGUICanvas when use WorldSpaceLGUIRenderer mode, it can fade-out sharp intersection between UI and 3D object.  
+#### Change:
+LGUICanvasScaler change parameter *FOVAngle* default value to 60.  
+#### Fix:
+Bug: When use ScreenSpaceOverlay and RenderTarget mode in editor and hit play, the fps keep drop, caused by DrawDebugBox in LGUICanvasScaler.  
+
 ### 3.4.11
 #### NewFeature:
 Add *NavigationChangeInterval* property for UISlider and UIScrollbar, so we can set the interval-value when change by NavigationInput.  
