@@ -6,6 +6,18 @@ sidebarDepth: 4
 
 ## 3.4
 
+### 3.4.14
+#### Fix:
+Bug: RenderTarget property missing when hit play.  
+Bug: When drag-change vector's component value (eg. Vector.X) in editor, the rendering will not update until the drag finish.  
+
+### 3.4.13
+#### NewFeature:
+Add new property *RenderTargetUpdateMode*, which can give up more options on how to update RenderTarget when LGUICanvas's *RenderMode* is *RenderTarget*.   
+#### Fix:
+Bug: Call function *SetDataSource* of UIRecyclableScrollView not working.  
+Crash: UIItem didn't check nullptr of LGUIManager.  
+
 ### 3.4.12
 #### NewFeature:
 Support Multisample Anti-Aliasing (MSAA) in LGUIRenderer (ScreenSpace, WorldSpaceLGUIRenderer, RenderTarget), just enable it in ProjectSettings->LGUI. Support on Windows(DX11 & DX12) and Android(Vulkan) and MacOS, IOS not tested.  
