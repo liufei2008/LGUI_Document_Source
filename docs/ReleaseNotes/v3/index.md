@@ -6,6 +6,15 @@ sidebarDepth: 4
 
 ## 3.4
 
+### 3.4.15
+#### NewFeature:
+Add new layout components just like UMG's layout, with name start of UIPanelLayout: UIPanelLayout_HorizontalBox, UIPanelLayout_VerticalBox, UIPanelLayout_UniformGrid, UIPanelLayout_FlexibleGrid. [Bilibili](https://www.bilibili.com/video/BV1em421W7wR/) [Youtube](https://youtu.be/5k6vRI-My50).  
+#### Fix:
+Bug: When drag to create prefab instance in editor, sometimes will create two instance.  
+Bug: RichText for UIText should support lower-case color value.  
+Bug: Undo attachment but still rendering in previous canvas.  
+Bug: LGUIPrefabSequence wrong display name.  
+
 ### 3.4.14
 #### Fix:
 Bug: RenderTarget property missing when hit play.  
