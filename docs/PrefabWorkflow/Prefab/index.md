@@ -39,11 +39,17 @@ The "Apply" button will save your changed properties to Prefab asset, so always 
 See [PrefabEditor](./../PrefabEditor/)
 
 ### Edit Prefab in Level-Editor
-Draw your Prefab asset to Level-Editor's viewport, this will create a instance of the Prefab asset:
+Drag your Prefab asset and drop it in Level-Editor's viewport, this will create an instance of the Prefab asset:
 ![](./LevelEditor_1.png)
-*Note, if you select a actor in Level-Editor then drag-drop the Prefab, then the created Prefab instance will attach to the selected actor.*
+*Note, if you select an actor in Level-Editor then drag-drop the Prefab, then the created Prefab instance will attach to the selected actor.*
 
 When edit a Prefab instance in Level-Editor, LGUI actually consider it as a Sub-Prefab, so features and limititions are same, see *Nested Prefab and Property Override* section below.
+
+### Delete Prefab in Level-Editor
+Select the root actor of your Prefab instance in Level-Editor, then right click on LGUI column in outliner, and click "Destroy Actors":  
+![](./LevelEditor_2.png)
+
+**NOTE!!! The "Destroy Actors" can destroy selected actors with it's attached children actors.**  
 
 ## Load Prefab at runtime
 LGUIPrefab provide a some function to load it at runtime, you can easily call it in Blueprint and c++:
@@ -62,7 +68,7 @@ Now drag the actor "TestLoad" to LevelEditor's viewport then hit play, you will 
 ![](./RuntimeUse_3.png)
 
 ### Initialize when load Prefab at runtime
-LGUIPrefab use it's own serialization policy and it is late than "BeginPlay" execute, so properties are not ready when use "BeginPlay", so a replacement for "BeginPlay" must use to do the initialization job.  
+LGUIPrefab use it's own serialization policy and it is late than "BeginPlay" execution, so properties are not ready when "BeginPlay", so a replacement for "BeginPlay" must use to do the initialization job.  
 LGUIPrefab provide two ways to achieve this: 
 - [**LGUILifeCycleBehaviour**](./../LGUILifeCycleBehaviour/): You can create a ActorComponent extend from LGUILifeCycleBehaviour, and attach the component to your actor inside Prefab.
 - [**LGUIPrefabInterface**](./../LGUIPrefabInterface/): Both Actor and ActorComponent can implement this interface.
@@ -75,14 +81,18 @@ Double click on your Prefab asset to open LGUI-Prefab-Editor, and drag TestIniti
 ![](./RuntimeUse_6.png)
 Now hit play and you will see printed info right after the Prefab is loaded.  
 
+### Delete Prefab instance at runtime
+Prefab instance is just a collection of actors, so all we need to do is delete these actors. LGUI provide a simple function to do it "Destroy Actor with Hierarchy", just use it with the loaded prefab's root actor:
+![](./RuntimeUse_7.png)
 
 ## Nested Prefab and Property Override
 Nested Prefab means you can include Prefab instances inside other Prefabs. Nested Prefabs retain their links to their own Prefab Assets, while also forming part of another Prefab Asset.  
 How to create a nested Prefab? This is simple, double click on Prefab asset to open a LGUI-Prefab-Editor, click a actor to select it as parent, then drag another prefab to the LGUI-Prefab-Editor's viewport, then you will find a instance of Prefab is created inside LGUI-Prefab-Editor:
 ![](./NestedPrefab_1.png)
-Prefab can maintain's default property, and track changed property values for later *Apply* or *Revert*. Example, if I change the light color to red:
+Prefab can maintain it's default property, and track changed property values for later *Apply* or *Revert*. 
+For example, if I change the light color to red:
 ![](./NestedPrefab_2.png)
-Goto Sub-Prefab's root Actor and right click LGUI column, you will find "Prefab Override Properties", click it and you can see the modified property:
+Goto Sub-Prefab's root Actor and right click LGUI column in outliner, you will find "Prefab Override Properties", click it and you can see the modified property:
 ![](./NestedPrefab_3.png)
 You can *Revert* the modified property to Sub-Prefab's default value, or *Apply* the value to change the Sub-Prefab's default value.  
 

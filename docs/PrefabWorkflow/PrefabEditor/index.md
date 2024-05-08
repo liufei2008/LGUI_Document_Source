@@ -8,7 +8,7 @@ When double click a LGUIPrefab, a PrefabEditor window will be opened, it is the 
 If you want to use your own LGUICanvas, you should remove the LGUICanvas component on **[temporary_RootAgent]**.  
 
 
-## NOTE!!!
+## Assign actor variable
 Sometimes we want to assign an actor variable inside PrefabEditor, we actually can't use these quick methods to choose the desired actor (the three little icon buttons), because it can only choose actors inside current level:  
 ![](./note1.png)
 
