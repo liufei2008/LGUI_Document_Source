@@ -6,6 +6,16 @@ sidebarDepth: 4
 
 ## 3.4
 
+### 3.4.16
+#### NewFeature:
+Support GamePause and TimeDilation. Thanks to [LTween](https://liufei2008.github.io/LTweenDoc/GetStarted/)'s new update.  
+#### Improvement:
+PrefabEditor now filter-out ActorBlueprint, so PrefabEditor will work silently for it.  
+#### Fix:
+Crash: Editor crash when there are multiple valid components for LGUIComponentReference.  
+Bug: Prefab skip properties with "DuplicateTransient" flag.  
+Bug: Editor duplicate UI Prefab but "HierarchyIndex" not change.  
+
 ### 3.4.15
 #### NewFeature:
 Add new layout components just like UMG's layout, with name start of UIPanelLayout: UIPanelLayout_HorizontalBox, UIPanelLayout_VerticalBox, UIPanelLayout_UniformGrid, UIPanelLayout_FlexibleGrid. [Bilibili](https://www.bilibili.com/video/BV1em421W7wR/) [Youtube](https://youtu.be/5k6vRI-My50).  
