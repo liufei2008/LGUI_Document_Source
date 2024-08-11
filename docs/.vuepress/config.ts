@@ -1,4 +1,6 @@
-import { defaultTheme } from "vuepress";
+import { viteBundler } from "@vuepress/bundler-vite"
+import { defaultTheme } from "@vuepress/theme-default"
+import { searchPlugin } from "@vuepress/plugin-search"
 
 export default {
     locales: {
@@ -11,6 +13,10 @@ export default {
     },
     base: "/LGUIDoc/",
     dest: "$(sourceDir)/../../liufei2008.github.io/LGUIDoc",
+    plugins: [
+      searchPlugin({}),  
+    ],
+    bundler: viteBundler(),
     theme: defaultTheme({
         locales: {
             '/':

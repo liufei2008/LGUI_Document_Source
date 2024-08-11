@@ -6,6 +6,24 @@ sidebarDepth: 4
 
 ## 3.4
 
+### 3.4.18
+#### NewFeature:
+Add new parameter *CanNavigateHere* for UISelectable, so we can skip it when use navigation input.  
+Add new parameter *Interactable* for UISelectable, so we can toggle it individually without UICanvasGroup.  
+LTween now can set TickGroup for every tweener.  
+#### Fix:
+Bug: ILGUIPrefabInterface->EditorAwake not working.  
+Bug: Package error when use UIProceduralRect in OpenWorld.  
+Bug: Warning when use LGUI with NavMesh.  
+
+### 3.4.17
+#### Fix:
+Bug: LGUICanvas->SetClipRectOffset not working.  
+Bug: BillboardScale not working when use LGUIPrefab.  
+Bug: LoadPrefab inside Awake result in wrong HierarchyIndex.  
+#### Improvement:
+Improve performance for UIToggleGroup.  
+
 ### 3.4.16
 #### NewFeature:
 Support GamePause and TimeDilation. Thanks to [LTween](https://liufei2008.github.io/LTweenDoc/GetStarted/)'s new update.  
