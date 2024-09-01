@@ -6,6 +6,14 @@ sidebarDepth: 4
 
 ## 3.4
 
+### 3.4.19
+#### NewFeature:
+New layout component *UISizeControlByChildren*, we can make a UI's size fit the biggest size of it's children.  
+#### Improvement:
+Improve layout rebuild performance.  
+#### Fix:
+Bug: GamePause not working because of LTween's update.  
+
 ### 3.4.18
 #### NewFeature:
 Add new parameter *CanNavigateHere* for UISelectable, so we can skip it when use navigation input.  
